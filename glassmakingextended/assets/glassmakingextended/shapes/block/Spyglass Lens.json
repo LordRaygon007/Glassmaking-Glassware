@@ -1,0 +1,105 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 4,
+	"textureHeight": 4,
+	"textureSizes": {
+		"spylens": [
+			16,
+			16
+		]
+	},
+	"textures": {
+		"spylens": "spylens"
+	},
+	"elements": [
+		{
+			"name": "spylens",
+			"from": [
+				8,
+				0,
+				8
+			],
+			"to": [
+				9,
+				0.25,
+				9
+			],
+			"rotationOrigin": [
+				8.5,
+				0.125,
+				8.5
+			],
+			"faces": {
+				"north": {
+					"texture": "#spylens",
+					"uv": [
+						0,
+						2.75,
+						1,
+						3
+					],
+					"snapUv": false,
+					"autoUv": false
+				},
+				"east": {
+					"texture": "#spylens",
+					"uv": [
+						0,
+						2.75,
+						1,
+						3
+					],
+					"snapUv": false,
+					"autoUv": false
+				},
+				"south": {
+					"texture": "#spylens",
+					"uv": [
+						0,
+						2.75,
+						1,
+						3
+					],
+					"snapUv": false,
+					"autoUv": false
+				},
+				"west": {
+					"texture": "#spylens",
+					"uv": [
+						0,
+						2.75,
+						1,
+						3
+					],
+					"snapUv": false,
+					"autoUv": false
+				},
+				"up": {
+					"texture": "#spylens",
+					"uv": [
+						0,
+						0,
+						2,
+						2
+					],
+					"snapUv": false,
+					"autoUv": false
+				},
+				"down": {
+					"texture": "#spylens",
+					"uv": [
+						0,
+						0,
+						2,
+						2
+					],
+					"snapUv": false,
+					"autoUv": false
+				}
+			}
+		}
+	]
+}

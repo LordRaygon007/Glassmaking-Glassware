@@ -1,0 +1,77 @@
+{
+  "code": "glassbottle-{color}",
+  "_comment": "This is just a simple recipe to figure out how the shape curves work and testing out wildcards.",
+  "output": {
+    "type": "block",
+    "code": "glassmakingextended:glassbottle-unannealed-{color}"
+  },
+  "steps": [
+    {
+      "name": "color",
+      "tool": "glassintake",
+      "shape": {
+        "segments": 13,
+        "outer": [
+          [ -3, 0 ],
+          [ 1, 4 ],
+          [ 6, 4 ],
+          [ 6, 0 ]
+        ]
+      },
+      "attributes": {
+        "code": "glassmakingfork:{color}",
+        "amount": 250
+      }
+    },
+    {
+      "tool": "blowing",
+      "shape": {
+        "segments": 14,
+        "outer": [
+          {
+            "segments": 1,
+            "vertices": [
+              [ -1, 3 ],
+              [ 10, 3 ]
+            ]
+          },
+          {
+            "segments": 1,
+            "vertices": [
+              [ 10, 3 ],
+              [ 12, 1 ]
+            ]
+          },
+          {
+            "segments": 1,
+            "vertices": [
+              [ 12, 1 ],
+              [ 18, 1 ]
+            ]
+          },
+          {
+            "segments": 11,
+            "vertices": [
+              [ 18, 1 ],
+              [ 18, 0 ],
+              [ 18, 0 ]
+            ]
+          }
+        ],
+        "inner": [
+          [ -1, 0 ],
+          [ -1, 3 ]
+        ]
+      },
+      "attributes": {
+        "time": 5
+      }
+    },
+    {
+      "tool": "cutoff",
+      "attributes": {
+        "time": 2
+      }
+    }
+  ]
+}
