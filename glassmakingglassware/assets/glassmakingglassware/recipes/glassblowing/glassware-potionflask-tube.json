@@ -1,0 +1,69 @@
+{
+  "code": "glassware-potionflask-tube",
+  "output": {
+    "type": "block",
+    "code": "glassware-potionflask-tube-{color}-unannealed"
+  },
+  "steps": [
+    // Placeholder steps & shapes
+    {
+      "name": "color",
+      "tool": "glassintake",
+      "shape": {
+        "segments": 11,
+        "outer": [
+          [ -3, 0 ],
+          [ 1, 4 ],
+          [ 6, 4 ],
+          [ 6, 0 ]
+        ]
+      },
+      "attributes": {
+        "code": "game:*",
+        "allowedVariants": [
+          "plain",
+          "quartz",
+          "green",
+          "blue",
+          "violet",
+          "red",
+          "yellow",
+          "brown",
+          "vintage",
+          "smoky",
+          "pink"
+        ],
+        "amount": 128
+      }
+    },
+
+    {
+      "tool": "blowing",
+      "shape": {
+        "segments": 13,
+        "outer": [
+          [ -3, 0 ],
+          [ 1, 6 ],
+          [ 8, 6 ],
+          [ 8, 0 ]
+        ],
+        "inner": [
+          [ -0.5, 0 ],
+          [ 1, 4 ],
+          [ 7, 4 ],
+          [ 7, 0 ]
+        ]
+      },
+      "attributes": {
+        "time": 5
+      }
+    },
+
+    {
+      "tool": "cutoff",
+      "attributes": {
+        "time": 2
+      }
+    }
+  ]
+}

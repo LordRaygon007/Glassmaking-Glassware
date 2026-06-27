@@ -1,0 +1,21 @@
+{
+  "type": "content",
+  "modid": "glassmakingglassware",
+  "name": "Glassmaking Glassware",
+  "authors": [
+    "LordRaygon"
+  ],
+  "description": "Glassmaking recipes for various Vanilla and Modded glassware",
+  "version": "1.0.0",
+  "side": "Universal",
+  "dependencies": {
+    "game": "1.22.3",
+    "glassmakingfork": "*"
+  },
+  "optionalDependencies": {
+    "aculinaryartillery": "*",
+    "tankardsandgoblets": "*",
+    "alchemy": "*",
+    "spyglass": "*"
+  }
+}

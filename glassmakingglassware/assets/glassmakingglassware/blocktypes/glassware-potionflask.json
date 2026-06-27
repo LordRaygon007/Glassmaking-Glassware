@@ -1,0 +1,192 @@
+{
+  "code": "glassware-potionflask",
+  "creativeinventory": {
+    "glassmakingglassware": ["*"]
+  },
+  "variantgroups": [
+    {
+      "code": "flask",
+      "states": ["normal", "round", "tube", "throwable"]
+    },
+    {
+      "code": "color",
+      "states": [
+        "plain",
+        "quartz",
+        "green",
+        "blue",
+        "violet",
+        "red",
+        "yellow",
+        "brown",
+        "vintage",
+        "smoky",
+        "pink"
+      ]
+    },
+    {
+      "code": "anneal",
+      "states": [
+        "unannealed", "annealed"
+      ]
+    }
+  ],
+  "shapeByType": {
+    "*-round-*": {
+      "base": "glassmakingglassware:block/alchemy/glassware-potionflask-round"
+    },
+    "*-tube-*": {
+      "base": "glassmakingglassware:block/alchemy/glassware-potionflask-tube"
+    },
+    "*-normal-*": {
+      "base": "glassmakingglassware:block/alchemy/glassware-potionflask-normal"
+    },
+    "*-throwable-*": {
+      "base": "glassmakingglassware:block/alchemy/glassware-potionflask-throwable"
+    }
+  },
+  "textures": { "glass": { "base": "game:block/glass/{color}" } },
+  "blockmaterial": "Glass",
+  "resistance": 0.3,
+  "frostable": true,
+  "behaviors": [
+    { "name": "RightClickPickup" },
+    { "name": "SneakPlacing" },
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.4375,
+          "z2": 1
+        }
+      }
+    },
+    {
+      "name": "Unplaceable",
+      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+    },
+    {
+      "name": "UnstableFalling",
+      "properties": {
+        "attachmentArea": {
+          "x1": 5,
+          "y1": 0,
+          "z1": 5,
+          "x2": 10,
+          "y2": 0,
+          "z2": 10
+        }
+      }
+    }
+  ],
+  "attributes": {
+    "shelvable": true,
+    "displaycaseable": true
+  },
+  "attributesByType": {
+    "*-tube-*-unannealed": {
+      "glassmaking:anneal": {
+        "temperature": {
+          "min": 200,
+          "max": 600
+        },
+        "time": 10800,
+        "output": {
+          "type": "block",
+          "code": "glassware-potionflask-tube-{color}-annealed"
+        }
+      },
+      "annealOvenSize": 0.125
+    },
+    "*-round-*-unannealed": {
+      "glassmaking:anneal": {
+        "temperature": {
+          "min": 200,
+          "max": 600
+        },
+        "time": 10800,
+        "output": {
+          "type": "block",
+          "code": "glassware-potionflask-round-{color}-annealed"
+        }
+      },
+      "annealOvenSize": 0.25
+    },
+    "*-normal-*-unannealed": {
+      "glassmaking:anneal": {
+        "temperature": {
+          "min": 200,
+          "max": 600
+        },
+        "time": 10800,
+        "output": {
+          "type": "block",
+          "code": "glassware-potionflask-normal-{color}-annealed"
+        }
+      },
+      "annealOvenSize": 0.5
+    },
+    "*-throwable-*-unannealed": {
+      "glassmaking:anneal": {
+        "temperature": {
+          "min": 200,
+          "max": 600
+        },
+        "time": 10800,
+        "output": {
+          "type": "block",
+          "code": "glassware-potionflask-throwable-{color}-annealed"
+        }
+      },
+      "annealOvenSize": 0.5
+    }
+  },
+  "sounds": {
+    "place": "game:player/buildhigh",
+    "walk": "game:walk/glass",
+    "break": "game:block/glass",
+    "hit": "game:block/glass"
+  },
+  "collisionbox": { "x1": 0.375, "y1": 0, "z1": 0.375, "x2": 0.625, "y2": 0.4375, "z2": 0.625 },
+  "selectionbox": { "x1": 0.375, "y1": 0, "z1": 0.375, "x2": 0.625, "y2": 0.4375, "z2": 0.625 },
+  "guiTransformByType": {
+    "*-tube-*": { "translation": { "x": 0, "y": 3, "z": 0 }, "origin": { "x": 0.5, "y": 0.2, "z": 0.5 }, "scale": 2 },
+    "*": { "translation": { "x": 0, "y": 3, "z": 0 }, "origin": { "x": 0.5, "y": 0.175, "z": 0.5 }, "scale": 2.75 }
+  },
+  "groundTransformByType": { "*-tube-*": { "scale": 2 }, "*": { "scale": 2.5 } },
+  "fpHandTransformByType": {
+    "*-tube-*": { "translation": { "x": 0, "y": 0.4, "z": 0 }, "rotation": { "x": 0, "y": -14, "z": 0 }, "scale": 1.5 },
+    "*": { "translation": { "x": 0, "y": 0.4, "z": 0 }, "rotation": { "x": 0, "y": -14, "z": 0 }, "scale": 2 }
+  },
+  "tpHandTransformByType": {
+    "*-tube-*": {
+      "translation": { "x": -1.1502792, "y": 0.005155392, "z": -1.0239975 },
+      "rotation": { "x": 0, "y": 0, "z": -74 },
+      "origin": { "x": 0.5, "y": 0, "z": 0.51 },
+      "scale": 0.5
+    },
+    "*-round-*": {
+      "translation": { "x": -0.9034582, "y": 0.026922278, "z": -0.80446714 },
+      "rotation": { "x": 0, "y": 0, "z": -90 },
+      "origin": { "x": 0.5, "y": 0, "z": 0.51 },
+      "scale": 0.66
+    },
+    "*-normal-*": {
+      "translation": { "x": -0.94682574, "y": 0.0065376395, "z": -0.80731374 },
+      "rotation": { "x": 0, "y": 0, "z": -90 },
+      "origin": { "x": 0.5, "y": 0.05, "z": 0.51 },
+      "scale": 0.66
+    },
+    "*-throwable-*": {
+      "translation": { "x": -1.1982889, "y": -0.11793123, "z": -1.023327 },
+      "rotation": { "x": 0, "y": 0, "z": -90 },
+      "origin": { "x": 0.5, "y": 0.05, "z": 0.51 },
+      "scale": 0.5
+    }
+  }
+}
