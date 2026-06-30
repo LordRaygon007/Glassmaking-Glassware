@@ -1,8 +1,8 @@
 {
-  "code": "glassware-potionflask-tube",
+  "code": "glassware-potionflask-normal",
   "output": {
     "type": "block",
-    "code": "glassware-potionflask-tube-plain-unannealed"
+    "code": "glassware-potionflask-normal-plain-unannealed"
   },
   "steps": [
     {
@@ -19,7 +19,7 @@
       },
       "attributes": {
         "code": "game:plain",
-        "amount": 128,
+        "amount": 200,
         "time": 2
       }
     },
@@ -81,48 +81,55 @@
     {
       "tool": "flare",
       "shape": {
-        "segments": 24,
+        "segments": 28,
         "outer": [
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
               [ -1, 0 ],
-              [ -1, 1 ]
+              [ -1, 2.5 ]
             ]
           },
           {
-            "segments": 9,
+            "segments": 4,
             "vertices": [
-              [ -1, 1 ],
-              [ 0, 1.5 ]
+              [ -1, 2.5 ],
+              [ 2, 2.5 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 0, 1.5 ],
+              [ 2, 2.5 ],
+              [ 2.5, 1.5 ]
+            ]
+          },
+          {
+            "segments": 4,
+            "vertices": [
+              [ 2.5, 1.5 ],
               [ 3.5, 1.5 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
               [ 3.5, 1.5 ],
-              [ 3.5, 2 ]
+              [ 3.5, 2.1 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 3.5, 2 ],
-              [ 4, 2 ]
+              [ 3.5, 2.1 ],
+              [ 4.5, 2.1 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 4, 2 ],
-              [ 4, 0 ]
+              [ 4.5, 2.1 ],
+              [ 4.5, 0 ]
             ]
           }
         ]

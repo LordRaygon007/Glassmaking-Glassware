@@ -1,8 +1,8 @@
 {
-  "code": "glassware-potionflask-tube",
+  "code": "glassware-potionflask-throwable",
   "output": {
     "type": "block",
-    "code": "glassware-potionflask-tube-plain-unannealed"
+    "code": "glassware-potionflask-throwable-plain-unannealed"
   },
   "steps": [
     {
@@ -81,48 +81,69 @@
     {
       "tool": "flare",
       "shape": {
-        "segments": 24,
+        "segments": 36,
         "outer": [
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
               [ -1, 0 ],
-              [ -1, 1 ]
+              [ -0.8, 0.4 ]
             ]
           },
           {
-            "segments": 9,
+            "segments": 4,
             "vertices": [
-              [ -1, 1 ],
-              [ 0, 1.5 ]
+              [ -0.8, 0.4 ],
+              [ 0, 0.9 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 0, 1.5 ],
-              [ 3.5, 1.5 ]
+              [ 0, 0.9 ],
+              [ 0.7, 1.1 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 3.5, 1.5 ],
-              [ 3.5, 2 ]
+              [ 0.7, 1.1 ],
+              [ 1.5, 1.4 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 3.5, 2 ],
-              [ 4, 2 ]
+              [ 1.5, 1.4 ],
+              [ 4.2, 2 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 4, 2 ],
-              [ 4, 0 ]
+              [ 4.2, 2 ],
+              [ 5.2, 2 ]
+            ]
+          },
+          {
+            "segments": 4,
+            "vertices": [
+              [ 5.2, 2 ],
+              [ 5.7, 1.5 ]
+            ]
+          },
+          {
+            "segments": 4,
+            "vertices": [
+              [ 5.7, 1.5 ],
+              [ 6.3, 1.5 ]
+            ]
+          },
+          {
+            "segments": 4,
+            "vertices": [
+              [ 6.3, 1.5 ],
+              [ 6.3, 0 ]
             ]
           }
         ]
