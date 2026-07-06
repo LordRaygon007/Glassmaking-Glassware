@@ -1,0 +1,21 @@
+{
+  "ingredientPattern": "P,P,P,S",
+  "width": 2,
+  "height": 2,
+  "shapeless": true,
+  "ingredients": {
+    "P": {
+      "type": "item",
+      "code": "em:powdered-ore-quartz"
+    },
+    "S": {
+      "type": "item",
+      "code": "game:powder-alum"
+    }
+  },
+  "output": {
+    "type": "item",
+    "code": "glassmaking:glassblend-vintage",
+    "amount": 1
+  }
+}

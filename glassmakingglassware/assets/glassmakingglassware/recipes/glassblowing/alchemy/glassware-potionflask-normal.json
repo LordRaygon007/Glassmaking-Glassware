@@ -1,27 +1,27 @@
 {
-  "code": "glassware-potionflask-normal",
+  "code": "glassware-potionflask-normal-{color}",
   "output": {
     "type": "block",
-    "code": "glassware-potionflask-normal-plain-unannealed"
+    "code": "glassware-potionflask-normal-{color}-unannealed"
   },
   "steps": [
     {
+      "name": "color",
       "tool": "glassintake",
       "shape": {
         "segments": 32,
         "outer": [
-          [ -1, 0 ],
-          [ -0.5, 0.5 ],
-          [ 0, 1 ],
-          [ 1, 1 ],
-          [ 1.5, 0 ]
+          [ -1.1, 0 ],
+          [ -1, 1 ],
+          [ 0, 2 ],
+          [ 1.5, 2 ],
+          [ 2.5, 1 ],
+          [ 2.6, 0 ]
         ]
       },
-      "attributes": {
-        "code": "game:plain",
-        "amount": 200,
-        "time": 2
-      }
+      "code": "game:*",
+      "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ],
+      "amount": 75
     },
 
     {
@@ -73,7 +73,7 @@
           }
         ]
       },
-      "attributes": {
+      "recipeAttributes": {
         "time": 5
       }
     },
@@ -134,14 +134,14 @@
           }
         ]
       },
-      "attributes": {
+      "recipeAttributes": {
         "time": 3
       }
     },
 
     {
       "tool": "cutoff",
-      "attributes": {
+      "recipeAttributes": {
         "time": 2
       }
     }

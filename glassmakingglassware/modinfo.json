@@ -10,7 +10,8 @@
   "side": "Universal",
   "dependencies": {
     "game": "1.22.3",
-    "glassmakingfork": "*"
+    "glassmaking": "2.0.0",
+    "em": "*"
   },
   "optionalDependencies": {
     "aculinaryartillery": "*",

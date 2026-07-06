@@ -1,0 +1,163 @@
+{
+  "code": "glassware-bottle-glass",
+  "creativeinventory": {
+    "glassmakingglassware": [ "*" ]
+  },
+  "variantgroups": [
+    {
+      "code": "glasstype",
+      "states": [
+        "green",
+        "blue",
+        "brown",
+        "pink",
+        "plain",
+        "quartz",
+        "red",
+        "smoky",
+        "vintage",
+        "violet",
+        "yellow"
+      ]
+    },
+    {
+      "code": "anealing",
+      "states": [ "unannealed" ]
+    }
+  ],
+  "shape": {
+    "base": "glassmakingglassware:shapes/block/aca/glassware-glassbottle"
+  },
+  "textures": { "glass": { "base": "game:block/glass/{color}" } },
+  "blockmaterial": "Glass",
+  "resistance": 0.5,
+  "frostable": true,
+  "maxStackSize": 16,
+  "lightAbsorption": 0,
+  "sideopaque": { "all": false },
+  "sideao": { "all": true },
+  "emitsideao": { "all": false },
+  "sidesolid": { "all": false },
+  "renderpass": "transparent",
+  "behaviors": [
+    { "name": "RightClickPickup" },
+    { "name": "SneakPlacing" },
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.4375,
+          "z2": 1
+        }
+      }
+    },
+    {
+      "name": "Unplaceable",
+      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+    },
+    {
+      "name": "UnstableFalling",
+      "properties": {
+        "attachmentArea": {
+          "x1": 5,
+          "y1": 0,
+          "z1": 5,
+          "x2": 10,
+          "y2": 0,
+          "z2": 10
+        }
+      }
+    }
+  ],
+  "attributes": {
+    "shelvable": true,
+    "displaycaseable": true,
+    "glassmaking:anneal": {
+      "temperature": {
+        "min": 200,
+        "max": 800
+      },
+      "time": 10800,
+      "output": {
+        "type": "block",
+        "code": "aculinaryartillery:bottle-glass-{color}-fired"
+      }
+    },
+    "annealOvenSize": 0.5,
+    "annealerTransform": 1
+  },
+  "sounds": {
+    "place": "game:player/buildhigh",
+    "walk": "game:walk/glass",
+    "break": "game:block/glass",
+    "hit": "game:block/glass"
+  },
+  "collisionbox": {
+    "x1": 0.4,
+    "y1": 0,
+    "z1": 0.4,
+    "x2": 0.6,
+    "y2": 0.375,
+    "z2": 0.6
+  },
+  "selectionbox": {
+    "x1": 0.35,
+    "y1": 0,
+    "z1": 0.35,
+    "x2": 0.65,
+    "y2": 0.375,
+    "z2": 0.65
+  },
+  "guiTransform": {
+    "rotation": {
+      "x": -22.6,
+      "y": -125,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.18,
+      "z": 0.5
+    },
+    "scale": 3.09
+  },
+  "groundTransform": {
+    "scale": 5
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0.5
+    },
+    "origin": {
+      "x": 0.5,
+      "y": -0.5,
+      "z": 0.8
+    },
+    "scale": 2
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.66,
+      "y": -0.03,
+      "z": -0.65
+    },
+    "rotation": {
+      "x": -139,
+      "y": 9,
+      "z": -118
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.01,
+      "z": 0.5
+    },
+    "scale": 0.81
+  }
+}

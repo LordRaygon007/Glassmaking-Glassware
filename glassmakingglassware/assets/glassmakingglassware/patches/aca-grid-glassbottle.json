@@ -1,0 +1,8 @@
+[
+  {
+    "file": "aculinaryartillery:recipes/grid/blocks/glassbottle",
+    "op": "add",
+    "path": "/enabled",
+    "value": false
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "_comment": "ore",
+  "ingredientPattern": "P,P,P,S",
+  "width": 2,
+  "height": 2,
+  "shapeless": true,
+  "ingredients": {
+    "P": {
+      "type": "item",
+      "code": "em:powdered-ore-quartz"
+    },
+    "S": {
+      "type": "item",
+      "code": "em:powdered-ore-manganeseviolet"
+    }
+  },
+  "output": {
+    "type": "item",
+    "code": "glassmaking:glassblend-violet",
+    "amount": 1
+  }
+}

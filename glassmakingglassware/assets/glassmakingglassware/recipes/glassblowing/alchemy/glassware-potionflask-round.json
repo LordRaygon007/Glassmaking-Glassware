@@ -1,27 +1,27 @@
 {
-  "code": "glassware-potionflask-tube",
+  "code": "glassware-potionflask-round-{color}",
   "output": {
     "type": "block",
-    "code": "glassware-potionflask-tube-plain-unannealed"
+    "code": "glassware-potionflask-round-{color}-unannealed"
   },
   "steps": [
     {
+      "name": "color",
       "tool": "glassintake",
       "shape": {
         "segments": 32,
         "outer": [
-          [ -1, 0 ],
-          [ -0.5, 0.5 ],
-          [ 0, 1 ],
-          [ 1, 1 ],
-          [ 1.5, 0 ]
+          [ -1.1, 0 ],
+          [ -1, 1 ],
+          [ 0, 2 ],
+          [ 1.5, 2 ],
+          [ 2.5, 1 ],
+          [ 2.6, 0 ]
         ]
       },
-      "attributes": {
-        "code": "game:plain",
-        "amount": 128,
-        "time": 2
-      }
+      "code": "game:*",
+      "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ],
+      "amount": 50
     },
 
     {
@@ -73,7 +73,7 @@
           }
         ]
       },
-      "attributes": {
+      "recipeAttributes": {
         "time": 5
       }
     },
@@ -81,60 +81,74 @@
     {
       "tool": "flare",
       "shape": {
-        "segments": 24,
+        "segments": 32,
         "outer": [
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
               [ -1, 0 ],
-              [ -1, 1 ]
+              [ -1, 1.3 ]
             ]
           },
           {
-            "segments": 9,
+            "segments": 4,
             "vertices": [
-              [ -1, 1 ],
-              [ 0, 1.5 ]
+              [ -1, 1.3 ],
+              [ 0, 2.5 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 0, 1.5 ],
-              [ 3.5, 1.5 ]
+              [ 0, 2.5 ],
+              [ 2, 2.5 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 3.5, 1.5 ],
-              [ 3.5, 2 ]
+              [ 2, 2.5 ],
+              [ 3, 1.3 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 3.5, 2 ],
-              [ 4, 2 ]
+              [ 3, 1.3 ],
+              [ 3.5, 1.3 ]
             ]
           },
           {
-            "segments": 3,
+            "segments": 4,
             "vertices": [
-              [ 4, 2 ],
-              [ 4, 0 ]
+              [ 3.5, 1.3 ],
+              [ 3.5, 1.7 ]
+            ]
+          },
+          {
+            "segments": 4,
+            "vertices": [
+              [ 3.5, 1.7 ],
+              [ 4.1, 1.7 ]
+            ]
+          },
+          {
+            "segments": 4,
+            "vertices": [
+              [ 4.1, 1.7 ],
+              [ 4.1, 0 ]
             ]
           }
         ]
       },
-      "attributes": {
+      "recipeAttributes": {
         "time": 3
       }
     },
 
     {
       "tool": "cutoff",
-      "attributes": {
+      "recipeAttributes": {
         "time": 2
       }
     }

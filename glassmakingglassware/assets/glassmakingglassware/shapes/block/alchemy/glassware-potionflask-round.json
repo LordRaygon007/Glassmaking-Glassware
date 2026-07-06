@@ -12,8 +12,6 @@
 		]
 	},
 	"textures": {
-		"topper": "glass",
-		"bracing": "glass",
 		"glass": "glass"
 	},
 	"elements": [
@@ -34,6 +32,7 @@
 				0.9,
 				8
 			],
+			"renderPass": 3,
 			"faces": {
 				"north": {
 					"texture": "#glass",
@@ -109,6 +108,7 @@
 						1
 					],
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -185,6 +185,7 @@
 					],
 					"rotationY": -45,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -261,6 +262,7 @@
 					],
 					"rotationY": -90,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -337,6 +339,7 @@
 					],
 					"rotationY": -135,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -413,6 +416,7 @@
 					],
 					"rotationY": -180,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -489,6 +493,7 @@
 					],
 					"rotationY": 45,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -565,6 +570,7 @@
 					],
 					"rotationY": 90,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -641,6 +647,7 @@
 					],
 					"rotationY": 135,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -718,6 +725,7 @@
 				8
 			],
 			"rotationX": -180,
+			"renderPass": 3,
 			"faces": {
 				"north": {
 					"texture": "#glass",
@@ -793,6 +801,7 @@
 						1
 					],
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -869,6 +878,7 @@
 					],
 					"rotationY": -45,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -945,6 +955,7 @@
 					],
 					"rotationY": -90,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1021,6 +1032,7 @@
 					],
 					"rotationY": -135,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1097,6 +1109,7 @@
 					],
 					"rotationY": -180,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1173,6 +1186,7 @@
 					],
 					"rotationY": 45,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1249,6 +1263,7 @@
 					],
 					"rotationY": 90,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1325,6 +1340,7 @@
 					],
 					"rotationY": 135,
 					"rotationZ": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1478,6 +1494,7 @@
 					],
 					"rotationX": -180,
 					"rotationZ": -180,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1555,6 +1572,7 @@
 					"rotationX": -180,
 					"rotationY": -45,
 					"rotationZ": -180,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1630,6 +1648,7 @@
 						0
 					],
 					"rotationY": -45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1705,6 +1724,7 @@
 						0
 					],
 					"rotationY": -90,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1779,6 +1799,7 @@
 						0,
 						0
 					],
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1854,6 +1875,7 @@
 						0
 					],
 					"rotationY": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -1929,6 +1951,7 @@
 						0
 					],
 					"rotationY": 90,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2006,6 +2029,7 @@
 					"rotationX": -180,
 					"rotationY": 45,
 					"rotationZ": -180,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2082,6 +2106,7 @@
 				4.6,
 				8
 			],
+			"renderPass": 3,
 			"faces": {
 				"north": {
 					"texture": "#glass",
@@ -2158,6 +2183,7 @@
 					],
 					"rotationX": -180,
 					"rotationZ": -180,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2235,6 +2261,7 @@
 					"rotationX": -180,
 					"rotationY": -45,
 					"rotationZ": -180,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2310,6 +2337,7 @@
 						0
 					],
 					"rotationY": -45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2385,6 +2413,7 @@
 						0
 					],
 					"rotationY": -90,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2459,6 +2488,7 @@
 						0,
 						0
 					],
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2534,6 +2564,7 @@
 						0
 					],
 					"rotationY": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2609,6 +2640,7 @@
 						0
 					],
 					"rotationY": 90,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2686,6 +2718,7 @@
 					"rotationX": -180,
 					"rotationY": 45,
 					"rotationZ": -180,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2762,6 +2795,7 @@
 				4.7,
 				8
 			],
+			"renderPass": 3,
 			"faces": {
 				"north": {
 					"texture": "#glass",
@@ -2837,6 +2871,7 @@
 						-0.7
 					],
 					"rotationY": 45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2912,6 +2947,7 @@
 						-0.7
 					],
 					"rotationY": 90,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -2987,6 +3023,7 @@
 						-0.7
 					],
 					"rotationY": 135,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -3062,6 +3099,7 @@
 						-0.7
 					],
 					"rotationY": 180,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -3137,6 +3175,7 @@
 						-0.7
 					],
 					"rotationY": -45,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -3212,6 +3251,7 @@
 						-0.7
 					],
 					"rotationY": -90,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
@@ -3287,6 +3327,7 @@
 						-0.7
 					],
 					"rotationY": -135,
+					"renderPass": 3,
 					"faces": {
 						"north": {
 							"texture": "#glass",
