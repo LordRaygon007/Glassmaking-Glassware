@@ -21,14 +21,14 @@
       ]
     },
     {
-      "code": "anealing",
+      "code": "annealing",
       "states": [ "unannealed" ]
     }
   ],
   "shape": {
     "base": "glassmakingglassware:shapes/block/aca/glassware-glassbottle"
   },
-  "textures": { "glass": { "base": "game:block/glass/{color}" } },
+  "textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
   "blockmaterial": "Glass",
   "resistance": 0.5,
   "frostable": true,
@@ -85,7 +85,7 @@
       "time": 10800,
       "output": {
         "type": "block",
-        "code": "aculinaryartillery:bottle-glass-{color}-fired"
+        "code": "aculinaryartillery:bottle-glass-{glasstype}-fired"
       }
     },
     "annealOvenSize": 0.5,

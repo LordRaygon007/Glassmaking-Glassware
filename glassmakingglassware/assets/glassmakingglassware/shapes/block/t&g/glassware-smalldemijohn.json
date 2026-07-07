@@ -9,6 +9,7 @@
 	"textureSizes": {
 	},
 	"textures": {
+		"glass": "glass"
 	},
 	"elements": [
 		{

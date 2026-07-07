@@ -1,12 +1,12 @@
 {
-  "code": "glassware-bottle-glass-{color}",
+  "code": "glassware-bottle-glass-{glasstype}",
   "output": {
     "type": "block",
-    "code": "glassware-bottle-glass-{color}-unannealed"
+    "code": "glassware-bottle-glass-{glasstype}-unannealed"
   },
   "steps": [
     {
-      "name": "color",
+      "name": "glasstype",
       "tool": "glassintake",
       "shape": {
         "segments": 32,
@@ -81,7 +81,7 @@
           }
         ]
       },
-      "reciperecipeAttributes": {
+      "recipeAttributes": {
         "time": 5
       }
     },
@@ -114,7 +114,7 @@
           }
         ]
       },
-      "reciperecipeAttributes": {
+      "recipeAttributes": {
         "time": 3,
         "consume": 0.1
       }
@@ -162,14 +162,14 @@
           }
         ]
       },
-      "reciperecipeAttributes": {
+      "recipeAttributes": {
         "time": 3
       }
     },
 
     {
       "tool": "cutoff",
-      "reciperecipeAttributes": {
+      "recipeAttributes": {
         "time": 2
       }
     }

@@ -1,12 +1,12 @@
 {
-  "code": "glassware-potionflask-normal-{color}",
+  "code": "glassware-potionflask-normal-{glasstype}",
   "output": {
     "type": "block",
-    "code": "glassware-potionflask-normal-{color}-unannealed"
+    "code": "glassware-potionflask-normal-{glasstype}-unannealed"
   },
   "steps": [
     {
-      "name": "color",
+      "name": "glasstype",
       "tool": "glassintake",
       "shape": {
         "segments": 32,

@@ -1,12 +1,12 @@
 {
-  "code": "glassware-potionflask-throwable-{color}",
+  "code": "glassware-potionflask-throwable-{glasstype}",
   "output": {
     "type": "block",
-    "code": "glassware-potionflask-throwable-{color}-unannealed"
+    "code": "glassware-potionflask-throwable-{glasstype}-unannealed"
   },
   "steps": [
     {
-      "name": "color",
+      "name": "glasstype",
       "tool": "glassintake",
       "shape": {
         "segments": 32,

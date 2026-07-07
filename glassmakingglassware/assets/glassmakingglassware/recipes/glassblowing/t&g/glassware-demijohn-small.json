@@ -1,0 +1,377 @@
+{
+  "code": "glassware-smalldemijohn-{glasstype}",
+  "output": {
+    "type": "block",
+    "code": "glassware-smalldemijohn-{glasstype}-unannealed"
+  },
+  "steps": [
+    {
+      "name": "glasstype",
+      "tool": "glassintake",
+      "shape": {
+        "segments": 48,
+        "outer": [
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 0 ],
+              [ -1.2, 0.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1.2, 0.6 ],
+              [ -0.6, 1.2 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -0.6, 1.2 ],
+              [ 0.8, 1.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 0.8, 1.4 ],
+              [ 1.8, 1.2 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 1.8, 1.2 ],
+              [ 2.2, 0.8 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 2.2, 0.8 ],
+              [ 2, 0 ]
+            ]
+          }
+        ]
+      },
+      "code": "game:*",
+      "allowedVariants": [ "plain", "smoky", "red", "blue", "green", "brown" ],
+      "amount": 275
+    },
+
+    {
+      "tool": "blowing",
+      "shape": {
+        "segments": 48,
+        "outer": [
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 0 ],
+              [ -1.2, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1.2, 1.6 ],
+              [ -0.6, 2.2 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -0.6, 2.2 ],
+              [ 1, 2.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 1, 2.6 ],
+              [ 3, 2.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3, 2.4 ],
+              [ 3.8, 1.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.8, 1.4 ],
+              [ 3.6, 0 ]
+            ]
+          }
+        ]
+      },
+      "recipeAttributes": {
+        "time": 2
+      }
+    },
+
+    {
+      "tool": "flatten",
+      "shape": {
+        "segments": 56,
+        "outer": [
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 0 ],
+              [ -1, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 1.6 ],
+              [ -0.6, 2 ]
+            ]
+          },
+          {
+            "segments": 16,
+            "vertices": [
+              [ -0.6, 2 ],
+              [ 2.8, 2 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 2.8, 2 ],
+              [ 3.2, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 1.6 ],
+              [ 3.2, 0.8 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 0.8 ],
+              [ 3.4, 0 ]
+            ]
+          }
+        ]
+      },
+      "recipeAttributes": {
+        "time": 2,
+        "consume": "0.1"
+      }
+    },
+
+    {
+      "tool": "squeeze",
+      "shape": {
+        "segments": 64,
+        "outer": [
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 0 ],
+              [ -1, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 1.6 ],
+              [ -0.6, 2 ]
+            ]
+          },
+          {
+            "segments": 16,
+            "vertices": [
+              [ -0.6, 2 ],
+              [ 2.8, 2 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 2.8, 2 ],
+              [ 3.2, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 1.6 ],
+              [ 3.2, 0.8 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 0.8 ],
+              [ 4, 0.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 4, 0.4 ],
+              [ 4, 0 ]
+            ]
+          }
+        ]
+      },
+      "recipeAttributes": {
+        "time": 2,
+        "consume": "0.1"
+      }
+    },
+
+    {
+      "tool": "stretch",
+      "shape": {
+        "segments": 64,
+        "outer": [
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 0 ],
+              [ -1, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 1.6 ],
+              [ -0.6, 2 ]
+            ]
+          },
+          {
+            "segments": 16,
+            "vertices": [
+              [ -0.6, 2 ],
+              [ 2.8, 2 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 2.8, 2 ],
+              [ 3.2, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 1.6 ],
+              [ 3.2, 0.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 0.4 ],
+              [ 6, 0.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 6, 0.4 ],
+              [ 6, 0 ]
+            ]
+          }
+        ]
+      },
+      "recipeAttributes": {
+        "time": 2
+      }
+    },
+
+    {
+      "tool": "flare",
+      "shape": {
+        "segments": 80,
+        "outer": [
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 0 ],
+              [ -1, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ -1, 1.6 ],
+              [ -0.6, 2 ]
+            ]
+          },
+          {
+            "segments": 16,
+            "vertices": [
+              [ -0.6, 2 ],
+              [ 2.8, 2 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 2.8, 2 ],
+              [ 3.2, 1.6 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 1.6 ],
+              [ 3.2, 0.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 3.2, 0.4 ],
+              [ 5.6, 0.4 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 5.6, 0.4 ],
+              [ 5.6, 0.8 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 5.6, 0.8 ],
+              [ 6, 0.8 ]
+            ]
+          },
+          {
+            "segments": 8,
+            "vertices": [
+              [ 6, 0.8 ],
+              [ 6, 0 ]
+            ]
+          }
+        ]
+      },
+      "recipeAttributes": {
+        "time": 2
+      }
+    },
+
+    {
+      "tool": "cutoff",
+      "recipeAttributes": {
+        "time": 2
+      }
+    }
+  ]
+}

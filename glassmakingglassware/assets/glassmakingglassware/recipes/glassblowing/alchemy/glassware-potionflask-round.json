@@ -1,12 +1,12 @@
 {
-  "code": "glassware-potionflask-round-{color}",
+  "code": "glassware-potionflask-round-{glasstype}",
   "output": {
     "type": "block",
-    "code": "glassware-potionflask-round-{color}-unannealed"
+    "code": "glassware-potionflask-round-{glasstype}-unannealed"
   },
   "steps": [
     {
-      "name": "color",
+      "name": "glasstype",
       "tool": "glassintake",
       "shape": {
         "segments": 32,

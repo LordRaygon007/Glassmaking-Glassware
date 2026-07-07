@@ -9,7 +9,7 @@
       "states": [ "normal", "round", "tube", "throwable" ]
     },
     {
-      "code": "color",
+      "code": "glasstype",
       "states": [
         "plain",
         "quartz",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "code": "anneal",
+      "code": "annealing",
       "states": [
         "unannealed",
         "annealed"
@@ -46,7 +46,7 @@
       "base": "glassmakingglassware:block/alchemy/glassware-potionflask-throwable"
     }
   },
-  "textures": { "glass": { "base": "game:block/glass/{color}" } },
+  "textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
   "blockmaterial": "Glass",
   "resistance": 0.75,
   "frostable": true,
@@ -108,7 +108,7 @@
         "time": 10800,
         "output": {
           "type": "block",
-          "code": "glassware-potionflask-{flask}-{color}-annealed"
+          "code": "glassware-potionflask-{flask}-{glasstype}-annealed"
         }
       }
     }
