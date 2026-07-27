@@ -1,5 +1,6 @@
 {
   "code": "glassware-potionflask-tube-{glasstype}",
+  "enabled": false,
   "output": {
     "type": "block",
     "code": "glassware-potionflask-tube-{glasstype}-unannealed"

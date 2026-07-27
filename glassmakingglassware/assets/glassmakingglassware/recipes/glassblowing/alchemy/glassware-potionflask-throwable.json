@@ -1,5 +1,6 @@
 {
   "code": "glassware-potionflask-throwable-{glasstype}",
+  "enabled": false,
   "output": {
     "type": "block",
     "code": "glassware-potionflask-throwable-{glasstype}-unannealed"

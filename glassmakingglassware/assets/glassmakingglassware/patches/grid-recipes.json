@@ -1,0 +1,23 @@
+[
+  {
+    "file": "glassmakingglassware:recipes/grid/aca/*",
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "dependsOn": [{ "modid": "aculinaryartillery" }]
+  },
+  {
+    "file": "glassmakingglassware:recipes/grid/alchemy/*",
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "dependsOn": [{ "modid": "alchemy" }]
+  },
+  {
+    "file": "glassmakingglassware:recipes/grid/t&g/*",
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "dependsOn": [{ "modid": "tankardsandgoblets" }]
+  }
+]

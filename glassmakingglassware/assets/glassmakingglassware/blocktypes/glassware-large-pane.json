@@ -1,0 +1,175 @@
+{
+  "code": "glassware-large-pane",
+  "creativeinventory": {
+    "glassmakingglassware": [ "*" ]
+  },
+  "variantgroups": [
+    {
+      "code": "glasstype",
+      "states": [
+        "plain",
+        "quartz",
+        "vintage",
+        "smoky",
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "pink",
+        "brown",
+        "violet"
+      ]
+    },
+    {
+      "code": "rot",
+      "states": [ "north", "east", "south", "west", "up", "down" ]
+    },
+    {
+      "code": "annealing",
+      "states": [ "unannealed", "annealed" ]
+    }
+  ],
+  "shape": { "base": "glassmakingglassware:block/general/glassware-large-pane" },
+  "textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
+
+  "blockmaterial": "Glass",
+  "faceCullMode": "MergeMaterial",
+  "resistance": 0.75,
+  "frostable": true,
+  "maxStackSize": 8,
+  "lightAbsorption": 0,
+  "sideopaque": { "all": false },
+  "renderpass": "transparent",
+
+  "behaviors": [
+    { "name": "RightClickPickup" },
+    { "name": "SneakPlacing" },
+    { "name": "GroundStorable" },
+    {
+      "name": "OmniRotatable",
+      "properties": {
+        "rotateSides": true,
+        "facing": "block"
+      }
+    },
+    {
+      "name": "Unplaceable",
+      "__comment": "Cannot place here."
+    },
+    {
+      "name": "UnstableFalling",
+      "properties": {
+        "attachmentArea": {
+          "x1": 5,
+          "y1": 0,
+          "z1": 5,
+          "x2": 10,
+          "y2": 0,
+          "z2": 10
+        }
+      }
+    }
+  ],
+
+  "attributes": {
+    "shelvable": true,
+    "displaycaseable": true,
+    "annealOvenSize": 1.0
+  },
+  "attributesByType": {
+    "*-unannealed": {
+      "glassmaking:anneal": {
+        "temperature": {
+          "min": 200,
+          "max": 800
+        },
+        "time": 10800,
+        "output": {
+          "type": "block",
+          "code": "glassware-large-pane-{glasstype}-east-annealed"
+        }
+      }
+    }
+  },
+  "sounds": {
+    "place": "player/buildhigh",
+    "break": "block/glass",
+    "hit": "block/glass",
+    "walk": "walk/glass*",
+    "ambient": "environment/rainwindow",
+    "ambientBlockCount": 4,
+    "ambientSoundType": "Weather",
+    "ambientMaxDistanceMerge": 1
+  },
+
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldRightReadyAnimation": "heldblockready",
+  "heldTpUseAnimation": "twohandplaceblock",
+
+  "collisionbox": {
+    "x1": 0.0625,
+    "y1": 0,
+    "z1": 0.0625,
+    "x2": 0.9375,
+    "y2": 0.125,
+    "z2": 0.9375
+  },
+  "selectionbox": {
+    "x1": 0.0625,
+    "y1": 0,
+    "z1": 0.0625,
+    "x2": 0.9375,
+    "y2": 0.125,
+    "z2": 0.9375
+  },
+
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 3,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.0625,
+      "z": 0.5
+    },
+    "scale": 1.33
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -1,
+      "y": -0.6,
+      "z": -1.05
+    },
+    "rotation": {
+      "x": -87,
+      "y": 9,
+      "z": 4
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.125,
+      "z": 0.5
+    },
+    "scale": 0.5
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -45,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 2.2
+  }
+}

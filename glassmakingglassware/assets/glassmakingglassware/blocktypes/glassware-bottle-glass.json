@@ -1,7 +1,7 @@
 {
   "code": "glassware-bottle-glass",
   "creativeinventory": {
-    "glassmakingglassware": [ "*" ]
+    "glassmakingglassware": ["*"]
   },
   "variantgroups": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "code": "annealing",
-      "states": [ "unannealed" ]
+      "states": ["unannealed"]
     }
   ],
   "shape": {
@@ -58,7 +58,7 @@
     },
     {
       "name": "Unplaceable",
-      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+      "__comment": "Cannot place here."
     },
     {
       "name": "UnstableFalling",
@@ -88,8 +88,7 @@
         "code": "aculinaryartillery:bottle-glass-{glasstype}-fired"
       }
     },
-    "annealOvenSize": 0.5,
-    "annealerTransform": 1
+    "annealOvenSize": 0.5
   },
   "sounds": {
     "place": "game:player/buildhigh",

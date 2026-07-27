@@ -1,0 +1,132 @@
+{
+  "code": "castingmold-large-pane",
+  "class": "glassmaking:castingmold",
+  "entityClass": "glassmaking:castingmold",
+
+  "behaviors": [
+    { "name": "Lockable" },
+    { "name": "UnstableFalling" }
+  ],
+  "variantgroups": [
+    {
+      "code": "color",
+      "states": [ "blue", "fire", "black", "brown", "cream", "earthyorange", "gray", "orange", "red", "tan" ]
+    },
+    {
+      "code": "materialtype",
+      "states": [ "fired" ]
+    }
+  ],
+  "shape": { "base": "glassmakingglassware:block/castingmolds/castingmold-large-pane" },
+  "textures": { "all": { "base": "game:block/clay/hardened/{color}" } },
+
+  "attributes": {
+    "reinforcable": true,
+    "shatteredShape": { "base": "game:block/clay/mold/shattered-ingot" },
+    "glassmaking:castingmold": {
+      "recipe": {
+        "code": "game:*",
+        "amount": 1000,
+        "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ]
+      },
+      "output": {
+        "type": "block",
+        "code": "glassware-large-pane-*"
+      }
+    },
+    "fillHeight": 2,
+    "fillQuadsByLevel": [
+      {
+        "x1": 2.5,
+        "z1": 2.5,
+        "x2": 13.5,
+        "z2": 13.5
+      }
+    ]
+  },
+
+  "blockmaterial": "Ceramic",
+  "creativeinventory": {
+    "general": [ "*" ],
+    "construction": [ "*" ],
+    "glassmakingglassware": [ "*" ]
+  },
+  "replaceable": 700,
+  "resistance": 1.5,
+  "maxStackSize": 8,
+  "lightAbsorption": 0,
+  "sounds": {
+    "walk": "walk/stone"
+  },
+  "collisionbox": {
+    "x1": 0.0625,
+    "y1": 0,
+    "z1": 0.0625,
+    "x2": 0.9375,
+    "y2": 0.125,
+    "z2": 0.9375
+  },
+  "selectionbox": {
+    "x1": 0.0625,
+    "y1": 0,
+    "z1": 0.0625,
+    "x2": 0.9375,
+    "y2": 0.125,
+    "z2": 0.9375
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "guiTransform": {
+    "translation": {
+      "x": 0,
+      "y": 3,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.0625,
+      "z": 0.5
+    },
+    "scale": 1.33
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -1,
+      "y": -0.6,
+      "z": -1.05
+    },
+    "rotation": {
+      "x": -87,
+      "y": 9,
+      "z": 4
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.125,
+      "z": 0.5
+    },
+    "scale": 0.5
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": -45,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0,
+      "z": 0.5
+    },
+    "scale": 2.2
+  }
+}

@@ -1,12 +1,12 @@
 {
   "code": "glassware-potionflask",
   "creativeinventory": {
-    "glassmakingglassware": [ "*" ]
+    "glassmakingglassware": ["*"]
   },
   "variantgroups": [
     {
       "code": "flask",
-      "states": [ "normal", "round", "tube", "throwable" ]
+      "states": ["normal", "round", "tube", "throwable"]
     },
     {
       "code": "glasstype",
@@ -26,10 +26,7 @@
     },
     {
       "code": "annealing",
-      "states": [
-        "unannealed",
-        "annealed"
-      ]
+      "states": ["unannealed", "annealed"]
     }
   ],
   "shapeByType": {
@@ -76,7 +73,7 @@
     },
     {
       "name": "Unplaceable",
-      "__comment": "The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility"
+      "__comment": "Cannot place here."
     },
     {
       "name": "UnstableFalling",
@@ -95,8 +92,7 @@
   "attributes": {
     "shelvable": true,
     "displaycaseable": true,
-    "annealOvenSize": 0.5,
-    "annealerTransform": 1
+    "annealOvenSize": 0.5
   },
   "attributesByType": {
     "*-unannealed": {

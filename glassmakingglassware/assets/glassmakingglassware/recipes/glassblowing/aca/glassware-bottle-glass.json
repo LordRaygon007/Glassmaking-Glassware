@@ -1,5 +1,6 @@
 {
   "code": "glassware-bottle-glass-{glasstype}",
+  "enabled": false,
   "output": {
     "type": "block",
     "code": "glassware-bottle-glass-{glasstype}-unannealed"

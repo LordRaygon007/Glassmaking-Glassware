@@ -1,5 +1,6 @@
 {
   "code": "glassware-smalldemijohn-{glasstype}",
+  "enabled": false,
   "output": {
     "type": "block",
     "code": "glassware-smalldemijohn-{glasstype}-unannealed"

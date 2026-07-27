@@ -1,16 +1,16 @@
 {
   "code": "glassware-smalldemijohn",
   "creativeinventory": {
-    "glassmakingglassware": [ "*" ]
+    "glassmakingglassware": ["*"]
   },
   "variantgroups": [
     {
       "code": "glasstype",
-      "states": [ "red", "blue", "green", "plain", "brown", "smoky" ]
+      "states": ["red", "blue", "green", "plain", "brown", "smoky"]
     },
     {
       "code": "annealing",
-      "states": [ "unannealed" ]
+      "states": ["unannealed"]
     }
   ],
 
@@ -18,7 +18,6 @@
     "base": "glassmakingglassware:shapes/block/t&g/glassware-smalldemijohn"
   },
   "textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
-
 
   "blockmaterial": "Glass",
   "maxStackSize": 1,
@@ -49,7 +48,7 @@
     },
     {
       "name": "Unplaceable",
-      "__comment": "Cannot place."
+      "__comment": "Cannot place here."
     },
     {
       "name": "RightClickPickup"
@@ -130,7 +129,6 @@
       }
     },
     "annealOvenSize": 0.5,
-    "annealerTransform": 1,
 
     "displayable": {
       "shelf": {
@@ -191,5 +189,4 @@
     "break": "game:block/glass",
     "walk": "game:walk/stone2"
   }
-
 }

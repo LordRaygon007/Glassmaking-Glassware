@@ -1,0 +1,58 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "cube",
+			"renderPass": 3,
+			"from": [ 1.0, 0.0, 1.0 ],
+			"to": [ 15.0, 1.0, 15.0 ],
+			"rotationOrigin": [ 8.0, 8.0, 8.0 ],
+			"faces": {
+				"north": {
+					"texture": "#glass",
+					"uv": [ 0.0, 0.0, 14.0, 1.0 ],
+					"autoUv": false,
+					"snapUv": false
+				},
+				"east": {
+					"texture": "#glass",
+					"uv": [ 0.0, 0.0, 14.0, 1.0 ],
+					"autoUv": false,
+					"snapUv": false
+				},
+				"south": {
+					"texture": "#glass",
+					"uv": [ 0.0, 0.0, 14.0, 1.0 ],
+					"autoUv": false,
+					"snapUv": false
+				},
+				"west": {
+					"texture": "#glass",
+					"uv": [ 0.0, 0.0, 14.0, 1.0 ],
+					"autoUv": false,
+					"snapUv": false
+				},
+				"up": {
+					"texture": "#glass",
+					"uv": [ 0.0, 15.0, 15.0, 0.0 ],
+					"autoUv": false,
+					"snapUv": false
+				},
+				"down": {
+					"texture": "#glass",
+					"uv": [ 0.0, 15.0, 15.0, 0.0 ],
+					"autoUv": false,
+					"snapUv": false
+				}
+			}
+		}
+	]}
