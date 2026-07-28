@@ -22,25 +22,24 @@
 
   "attributes": {
     "reinforcable": true,
-    "shatteredShape": { "base": "game:block/clay/mold/shattered-ingot" },
     "glassmaking:castingmold": {
       "recipe": {
+        "name": "glasstype",
         "code": "game:*",
-        "amount": 1000,
+        "amount": 250,
         "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ]
       },
       "output": {
         "type": "block",
-        "code": "glassware-large-pane-*"
+        "code": "glassware-large-pane-{glasstype}-unannealed"
       }
     },
     "fillHeight": 2,
     "fillQuadsByLevel": [
       {
-        "x1": 2.5,
-        "z1": 2.5,
-        "x2": 13.5,
-        "z2": 13.5
+        "x": 14,
+        "z": 14,
+        "y": 2
       }
     ]
   },

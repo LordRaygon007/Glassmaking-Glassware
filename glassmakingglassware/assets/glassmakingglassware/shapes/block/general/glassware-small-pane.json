@@ -6,7 +6,7 @@
   "textureWidth": 16,
   "textureHeight": 16,
   "textureSizes": {},
-  "textures": { "glass": "glass" },
+  "textures": {},
   "elements": [
     {
       "name": "cube",
