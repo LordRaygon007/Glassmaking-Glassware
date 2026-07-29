@@ -5,7 +5,7 @@
 		{ "code": "color", "states": [ "blue", "red", "fire" ] },
 		{ "code": "materialtype", "states": [ "raw" ] }
 	],
-	"creativeinventory": { "general": [ "*" ], "construction": [ "*" ], "glassmakingglassware": [ "*" ] },
+	"creativeinventory": { "construction": [ "*" ], "glassmakingglassware": [ "*" ] },
 	"behaviors": [
 		{ "name": "GroundStorable", "properties": { "layout": "SingleCenter" } },
 		{ "name": "Unplaceable", "__comment": "Cannot place here." },

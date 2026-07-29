@@ -6,7 +6,7 @@
 		{ "code": "color", "states": [ "blue", "fire", "black", "brown", "cream", "earthyorange", "gray", "orange", "red", "tan" ] },
 		{ "code": "materialtype", "states": [ "fired" ] }
 	],
-	"creativeinventory": { "general": [ "*" ], "construction": [ "*" ], "glassmakingglassware": [ "*" ] },
+	"creativeinventory": { "construction": [ "*" ], "glassmakingglassware": [ "*" ] },
 	"behaviors": [
 		{ "name": "Lockable" },
 		{ "name": "Unplaceable", "__comment": "Cannot place here." },
@@ -17,8 +17,8 @@
 	"replaceable": 700,
 	"lightAbsorption": 0,
 	"maxStackSize": 8,
-	"collisionbox": { "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.9375, "y2": 0.125, "z2": 0.9375 },
-	"selectionbox": { "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.9375, "y2": 0.125, "z2": 0.9375 },
+	"collisionbox": { "x1": 0.2, "y1": 0, "z1": 0.2, "x2": 0.8, "y2": 0.9, "z2": 0.8 },
+	"selectionbox": { "x1": 0.2, "y1": 0, "z1": 0.2, "x2": 0.8, "y2": 0.9, "z2": 0.8 },
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
 	"shape": { "base": "glassmakingglassware:block/castingmolds/castingmold-large-pane" },
@@ -32,7 +32,7 @@
 		"reinforcable": true,
 		"glassmaking:castingmold": {
 			"recipe": { "name": "glasstype", "code": "game:*", "amount": 250, "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ] },
-			"output": { "type": "block", "code": "glassware-large-pane-{glasstype}-unannealed" }
+			"output": { "type": "block", "code": "glassmakingglassware:glassware-large-pane-*-unannealed" }
 		},
 		"fillHeight": 2,
 		"fillQuadsByLevel": [
