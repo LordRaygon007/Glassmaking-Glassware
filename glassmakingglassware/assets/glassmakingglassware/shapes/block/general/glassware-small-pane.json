@@ -1,98 +1,28 @@
 {
-  "editor": {
-    "allAngles": false,
-    "entityTextureMode": false
-  },
-  "textureWidth": 16,
-  "textureHeight": 16,
-  "textureSizes": {},
-  "textures": {},
-  "elements": [
-    {
-      "name": "cube",
-      "from": [
-        5,
-        0,
-        5
-      ],
-      "to": [
-        11,
-        1,
-        11
-      ],
-      "rotationOrigin": [
-        8,
-        0.5,
-        8
-      ],
-      "faces": {
-        "north": {
-          "texture": "#glass",
-          "uv": [
-            -1,
-            1,
-            5,
-            2
-          ],
-          "snapUv": false,
-          "autoUv": false
-        },
-        "east": {
-          "texture": "#glass",
-          "uv": [
-            -7,
-            1,
-            -1,
-            2
-          ],
-          "snapUv": false,
-          "autoUv": false
-        },
-        "south": {
-          "texture": "#glass",
-          "uv": [
-            11,
-            1,
-            17,
-            2
-          ],
-          "snapUv": false,
-          "autoUv": false
-        },
-        "west": {
-          "texture": "#glass",
-          "uv": [
-            5,
-            1,
-            11,
-            2
-          ],
-          "snapUv": false,
-          "autoUv": false
-        },
-        "up": {
-          "texture": "#glass",
-          "uv": [
-            5,
-            1,
-            -1,
-            -5
-          ],
-          "snapUv": false,
-          "autoUv": false
-        },
-        "down": {
-          "texture": "#glass",
-          "uv": [
-            11,
-            -5,
-            5,
-            1
-          ],
-          "snapUv": false,
-          "autoUv": false
-        }
-      }
-    }
-  ]
-}
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "Pane1",
+			"from": [ 5.0, 0.0, 5.0 ],
+			"to": [ 11.0, 0.5, 11.0 ],
+			"renderPass": 3,
+			"rotationOrigin": [ 8.0, 0.25, 8.0 ],
+			"faces": {
+				"north": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"east": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"south": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"west": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
+				"up": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 6.0 ] },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 6.0 ], "enabled": false }
+			}
+		}
+	]}

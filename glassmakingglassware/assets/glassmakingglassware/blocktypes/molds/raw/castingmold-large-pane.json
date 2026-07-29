@@ -157,6 +157,7 @@
   "sidesolid": {
     "all": false
   },
+  "heldRightReadyAnimation": "heldblockready",
   "guiTransform": {
     "translation": {
       "x": 0,
@@ -168,16 +169,16 @@
       "y": 0.0625,
       "z": 0.5
     },
-    "scale": 1.33
+    "scale": 1.25
   },
   "tpHandTransform": {
     "translation": {
       "x": -1,
-      "y": -0.6,
-      "z": -1.05
+      "y": -0.2,
+      "z": -0.81
     },
     "rotation": {
-      "x": -87,
+      "x": -69,
       "y": 9,
       "z": 4
     },
@@ -186,7 +187,7 @@
       "y": 0.125,
       "z": 0.5
     },
-    "scale": 0.5
+    "scale": 0.75
   },
   "groundTransform": {
     "translation": {
@@ -204,6 +205,6 @@
       "y": 0,
       "z": 0.5
     },
-    "scale": 2.2
+    "scale": 5
   }
 }

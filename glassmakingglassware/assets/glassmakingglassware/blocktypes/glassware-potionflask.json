@@ -111,9 +111,13 @@
   },
   "sounds": {
     "place": "game:player/buildhigh",
-    "walk": "game:walk/glass",
     "break": "game:block/glass",
-    "hit": "game:block/glass"
+    "hit": "game:block/glass",
+    "walk": "game:walk/glass*",
+    "ambient": "game:environment/rainwindow",
+    "ambientBlockCount": 4,
+    "ambientSoundType": "Weather",
+    "ambientMaxDistanceMerge": 1
   },
   "collisionbox": {
     "x1": 0.375,

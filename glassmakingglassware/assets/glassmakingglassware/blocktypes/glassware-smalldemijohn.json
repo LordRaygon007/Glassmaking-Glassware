@@ -184,9 +184,13 @@
   },
 
   "sounds": {
-    "place": "game:block/loosestone1",
-    "hit": "game:tool/breakreinforced",
+    "place": "game:player/buildhigh",
     "break": "game:block/glass",
-    "walk": "game:walk/stone2"
+    "hit": "game:block/glass",
+    "walk": "game:walk/glass*",
+    "ambient": "game:environment/rainwindow",
+    "ambientBlockCount": 4,
+    "ambientSoundType": "Weather",
+    "ambientMaxDistanceMerge": 1
   }
 }

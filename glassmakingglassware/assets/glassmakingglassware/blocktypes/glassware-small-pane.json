@@ -1,24 +1,10 @@
 {
   "code": "glassware-small-pane",
-  "creativeinventory": {
-    "glassmakingglassware": [ "*" ]
-  },
+  "creativeinventory": { "glassmakingglassware": [ "*" ] },
   "variantgroups": [
     {
       "code": "glasstype",
-      "states": [
-        "plain",
-        "quartz",
-        "vintage",
-        "smoky",
-        "red",
-        "blue",
-        "green",
-        "yellow",
-        "pink",
-        "brown",
-        "violet"
-      ]
+      "states": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ]
     },
     {
       "code": "annealing",
@@ -27,31 +13,39 @@
   ],
   "shape": { "base": "glassmakingglassware:block/general/glassware-small-pane" },
   "textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
-
+  "drawtype": "json",
   "blockmaterial": "Glass",
   "faceCullMode": "MergeMaterial",
   "resistance": 0.75,
   "frostable": true,
-  "maxStackSize": 32,
+  "maxStackSize": 16,
   "lightAbsorption": 0,
   "sideopaque": { "all": false },
+  "sidesolid": { "all": false },
   "renderpass": "transparent",
-
   "behaviors": [
     { "name": "RightClickPickup" },
     { "name": "SneakPlacing" },
     {
       "name": "GroundStorable",
       "properties": {
-        "layout": "Quadrants",
+        "layout": "Stacking",
+        "stackingModelByType": { "*": "glassmakingglassware:block/general/glassware-small-pane-pile" },
+        "stackingTextures": { "glass": "game:block/glass/{glasstype}" },
+        "modelItemsToStackSizeRatio": 1,
+        "upSolid": true,
+        "stackingCapacity": 128,
+        "transferQuantity": 1,
+        "bulkTransferQuantity": 4,
         "collisionBox": {
           "x1": 0,
           "y1": 0,
           "z1": 0,
           "x2": 1,
-          "y2": 0.125,
+          "y2": 0.03125,
           "z2": 1
-        }
+        },
+        "cbScaleYByLayer": 0.25
       }
     },
     {
@@ -72,7 +66,6 @@
       }
     }
   ],
-
   "attributes": {
     "shelvable": true,
     "displaycaseable": true,
@@ -94,16 +87,15 @@
     }
   },
   "sounds": {
-    "place": "player/buildhigh",
-    "break": "block/glass",
-    "hit": "block/glass",
-    "walk": "walk/glass*",
-    "ambient": "environment/rainwindow",
+    "place": "game:player/buildhigh",
+    "break": "game:block/glass",
+    "hit": "game:block/glass",
+    "walk": "game:walk/glass*",
+    "ambient": "game:environment/rainwindow",
     "ambientBlockCount": 4,
     "ambientSoundType": "Weather",
     "ambientMaxDistanceMerge": 1
   },
-
   "collisionbox": {
     "x1": 0.3125,
     "y1": 0,
@@ -138,17 +130,15 @@
     },
     "scale": 3.52
   },
-  "groundTransform": {
-    "scale": 3.5
-  },
+  "groundTransform": { "scale": 5 },
   "tpHandTransform": {
     "translation": {
       "x": -0.85,
-      "y": -0.35,
+      "y": -0.15,
       "z": -0.7
     },
     "rotation": {
-      "x": 104,
+      "x": 110,
       "y": -40,
       "z": -88
     },
