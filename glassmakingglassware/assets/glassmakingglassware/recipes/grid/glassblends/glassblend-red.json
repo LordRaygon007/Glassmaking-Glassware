@@ -1,49 +1,23 @@
 [
-  {
-    "_comment": "game",
-    "ingredientPattern": "P,P,P,S",
-    "width": 2,
-    "height": 2,
-    "shapeless": true,
-    "ingredients": {
-      "P": {
-        "type": "item",
-        "code": "em:powdered-ore-quartz"
-      },
-      "S": {
-        "type": "item",
-        "code": "game:powder-cinnabar"
-      }
-    },
-    "output": {
-      "type": "item",
-      "code": "glassmaking:glassblend-red",
-      "amount": 1
-    }
-  },
-
-  {
-    "_comment": "ore",
-    "ingredientPattern": "P,P,P,S",
-    "width": 2,
-    "height": 2,
-    "shapeless": true,
-    "ingredients": {
-      "P": {
-        "type": "item",
-        "code": "em:powdered-ore-quartz"
-      },
-      "S": {
-        "type": "item",
-        "code": "em:powdered-ore-*",
-        "name": "type",
-        "allowedVariants": [ "litharge", "hematite", "cadmiumselenide", "cobaltsulfate" ]
-      }
-    },
-    "output": {
-      "type": "item",
-      "code": "glassmaking:glassblend-red",
-      "amount": 1
-    }
-  }
+	{
+		"_comment": "game",
+		"ingredientPattern": "P,P,P,S",
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"ingredients": { "P": { "type": "item", "code": "em:powdered-ore-quartz" }, "S": { "type": "item", "code": "game:powder-cinnabar" } },
+		"output": { "type": "item", "code": "glassmaking:glassblend-red", "amount": 1 }
+	},
+	{
+		"_comment": "ore",
+		"ingredientPattern": "P,P,P,S",
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"ingredients": {
+			"P": { "type": "item", "code": "em:powdered-ore-quartz" },
+			"S": { "type": "item", "code": "em:powdered-ore-*", "name": "type", "allowedVariants": [ "litharge", "hematite", "cadmiumselenide", "cobaltsulfate" ] }
+		},
+		"output": { "type": "item", "code": "glassmaking:glassblend-red", "amount": 1 }
+	}
 ]

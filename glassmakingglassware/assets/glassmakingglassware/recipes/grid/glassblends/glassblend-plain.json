@@ -1,17 +1,8 @@
 {
-  "ingredientPattern": "P,P,P,P",
-  "width": 2,
-  "height": 2,
-  "shapeless": true,
-  "ingredients": {
-    "P": {
-      "type": "item",
-      "code": "em:powdered-ore-quartz"
-    }
-  },
-  "output": {
-    "type": "item",
-    "code": "glassmaking:glassblend-plain",
-    "amount": 1
-  }
+	"ingredientPattern": "P,P,P,P",
+	"width": 2,
+	"height": 2,
+	"shapeless": true,
+	"ingredients": { "P": { "type": "item", "code": "em:powdered-ore-quartz" } },
+	"output": { "type": "item", "code": "glassmaking:glassblend-plain", "amount": 1 }
 }

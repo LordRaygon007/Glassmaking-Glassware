@@ -1,14 +1,6 @@
 {
-	"editor": {
-		"allAngles": false,
-		"entityTextureMode": false
-	},
-	"textureWidth": 16,
-	"textureHeight": 16,
-	"textureSizes": {
-	},
-	"textures": {
-	},
+	"editor": { "allAngles": false, "entityTextureMode": false },
+	"textures": {},
 	"elements": [
 		{
 			"name": "base",
@@ -123,4 +115,8 @@
 				}
 			]
 		}
-	]}
+	],
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {}
+}

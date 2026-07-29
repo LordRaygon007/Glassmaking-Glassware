@@ -1,8 +1,5 @@
 {
 	"editor": { "allAngles": false, "entityTextureMode": false },
-	"textureWidth": 16,
-	"textureHeight": 16,
-	"textureSizes": {},
 	"textures": { "glass": "glass" },
 	"elements": [
 		{
@@ -20,5 +17,8 @@
 				"down": { "texture": "#glass", "uv": [ 0.0, 15.0, 15.0, 0.0 ], "autoUv": false, "snapUv": false }
 			}
 		}
-	]
+	],
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {}
 }

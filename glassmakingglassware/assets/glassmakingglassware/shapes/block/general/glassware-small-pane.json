@@ -22,7 +22,7 @@
 				"south": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
 				"west": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 0.5 ] },
 				"up": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 6.0 ] },
-				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 6.0 ], "enabled": false }
+				"down": { "texture": "#glass", "uv": [ 0.0, 0.0, 6.0, 6.0 ], "enabled": false }
 			}
 		}
 	]}

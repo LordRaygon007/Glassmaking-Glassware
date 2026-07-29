@@ -1,72 +1,29 @@
 [
-  {
-    "_comment": "game",
-    "ingredientPattern": "P,P,P,S",
-    "width": 2,
-    "height": 2,
-    "shapeless": true,
-    "ingredients": {
-      "P": {
-        "type": "item",
-        "code": "em:powdered-ore-quartz"
-      },
-      "S": {
-        "type": "item",
-        "code": "game:powder-iron-oxide"
-      }
-    },
-    "output": {
-      "type": "item",
-      "code": "glassmaking:glassblend-brown",
-      "amount": 1
-    }
-  },
-
-  {
-    "_comment": "ore",
-    "ingredientPattern": "P,P,P,S",
-    "width": 2,
-    "height": 2,
-    "shapeless": true,
-    "ingredients": {
-      "P": {
-        "type": "item",
-        "code": "em:powdered-ore-quartz"
-      },
-      "S": {
-        "type": "item",
-        "code": "em:powdered-ore-cadmiumsulfoselenide"
-      }
-    },
-    "output": {
-      "type": "item",
-      "code": "glassmaking:glassblend-brown",
-      "amount": 1
-    }
-  },
-
-  {
-    "_comment": "stone",
-    "ingredientPattern": "P,P,P,S",
-    "width": 2,
-    "height": 2,
-    "shapeless": true,
-    "ingredients": {
-      "P": {
-        "type": "item",
-        "code": "em:powdered-ore-quartz"
-      },
-      "S": {
-        "type": "item",
-        "code": "em:powdered-stone-*",
-        "name": "type",
-        "allowedVariants": [ "bauxite ", "chert" ]
-      }
-    },
-    "output": {
-      "type": "item",
-      "code": "glassmaking:glassblend-brown",
-      "amount": 1
-    }
-  }
+	{
+		"_comment": "game",
+		"ingredientPattern": "P,P,P,S",
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"ingredients": { "P": { "type": "item", "code": "em:powdered-ore-quartz" }, "S": { "type": "item", "code": "game:powder-iron-oxide" } },
+		"output": { "type": "item", "code": "glassmaking:glassblend-brown", "amount": 1 }
+	},
+	{
+		"_comment": "ore",
+		"ingredientPattern": "P,P,P,S",
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"ingredients": { "P": { "type": "item", "code": "em:powdered-ore-quartz" }, "S": { "type": "item", "code": "em:powdered-ore-cadmiumsulfoselenide" } },
+		"output": { "type": "item", "code": "glassmaking:glassblend-brown", "amount": 1 }
+	},
+	{
+		"_comment": "stone",
+		"ingredientPattern": "P,P,P,S",
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"ingredients": { "P": { "type": "item", "code": "em:powdered-ore-quartz" }, "S": { "type": "item", "code": "em:powdered-stone-*", "name": "type", "allowedVariants": [ "bauxite ", "chert" ] } },
+		"output": { "type": "item", "code": "glassmaking:glassblend-brown", "amount": 1 }
+	}
 ]

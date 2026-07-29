@@ -1,210 +1,83 @@
 {
-  "code": "castingmold-large-pane",
-  "class": "Block",
-  "shape": { "base": "glassmakingglassware:block/castingmolds/castingmold-large-pane" },
-  "behaviors": [
-    {
-      "name": "GroundStorable",
-      "properties": { "layout": "SingleCenter" }
-    },
-    { "name": "Unplaceable" }, // The ground storable obsoletes this being a block. Should be an item, but is kept a block for backwards compatibility
-    { "name": "RightClickPickup" }
-  ],
-  "variantgroups": [
-    {
-      "code": "color",
-      "states": [ "blue", "red", "fire" ]
-    },
-    {
-      "code": "materialtype",
-      "states": [ "raw" ]
-    }
-  ],
-  "textures": { "all": { "base": "game:block/clay/{color}clay" } },
-  "attributes": {
-    "reinforcable": true,
-    "shelvable": false
-  },
-  "attributesByType": {
-    "castingmold-large-pane-red-raw": {
-      "beehivekiln": {
-        "0": {
-          "type": "block",
-          "code": "castingmold-large-pane-tan-fired"
-        },
-        "1": {
-          "type": "block",
-          "code": "castingmold-large-pane-orange-fired"
-        },
-        "2": {
-          "type": "block",
-          "code": "castingmold-large-pane-red-fired"
-        },
-        "3": {
-          "type": "block",
-          "code": "castingmold-large-pane-brown-fired"
-        }
-      }
-    },
-    "castingmold-large-pane-blue-raw": {
-      "beehivekiln": {
-        "0": {
-          "type": "block",
-          "code": "castingmold-large-pane-cream-fired"
-        },
-        "1": {
-          "type": "block",
-          "code": "castingmold-large-pane-gray-fired"
-        },
-        "2": {
-          "type": "block",
-          "code": "castingmold-large-pane-black-fired"
-        },
-        "3": {
-          "type": "block",
-          "code": "castingmold-large-pane-black-fired"
-        }
-      }
-    },
-    "castingmold-large-pane-fire-raw": {
-      "beehivekiln": {
-        "0": {
-          "type": "block",
-          "code": "castingmold-large-pane-fire-fired"
-        },
-        "1": {
-          "type": "block",
-          "code": "castingmold-large-pane-fire-fired"
-        },
-        "2": {
-          "type": "block",
-          "code": "castingmold-large-pane-fire-fired"
-        },
-        "3": {
-          "type": "block",
-          "code": "castingmold-large-pane-fire-fired"
-        }
-      }
-    }
-  },
-  "combustiblePropsByType": {
-    "castingmold-large-pane-fire-raw": {
-      "meltingPoint": 650,
-      "meltingDuration": 45,
-      "smeltedRatio": 1,
-      "smeltingType": "fire",
-      "smeltedStack": {
-        "type": "block",
-        "code": "castingmold-large-pane-fire-fired"
-      },
-      "requiresContainer": false
-    },
-    "castingmold-large-pane-blue-raw": {
-      "meltingPoint": 650,
-      "meltingDuration": 45,
-      "smeltedRatio": 1,
-      "smeltingType": "fire",
-      "smeltedStack": {
-        "type": "block",
-        "code": "castingmold-large-pane-blue-fired"
-      },
-      "requiresContainer": false
-    },
-    "castingmold-large-pane-red-raw": {
-      "meltingPoint": 650,
-      "meltingDuration": 45,
-      "smeltedRatio": 1,
-      "smeltingType": "fire",
-      "smeltedStack": {
-        "type": "block",
-        "code": "castingmold-large-pane-earthyorange-fired"
-      },
-      "requiresContainer": false
-    }
-  },
-  "blockmaterial": "Ceramic",
-  "creativeinventory": {
-    "general": [ "*" ],
-    "construction": [ "*" ],
-    "glassmakingglassware": [ "*" ]
-  },
-  "replaceable": 700,
-  "resistance": 1.5,
-  "maxStackSize": 8,
-  "lightAbsorption": 0,
-  "sounds": {
-    "walk": "walk/stone"
-  },
-  "collisionbox": {
-    "x1": 0.0625,
-    "y1": 0,
-    "z1": 0.0625,
-    "x2": 0.9375,
-    "y2": 0.125,
-    "z2": 0.9375
-  },
-  "selectionbox": {
-    "x1": 0.0625,
-    "y1": 0,
-    "z1": 0.0625,
-    "x2": 0.9375,
-    "y2": 0.125,
-    "z2": 0.9375
-  },
-  "sideopaque": {
-    "all": false
-  },
-  "sidesolid": {
-    "all": false
-  },
-  "heldRightReadyAnimation": "heldblockready",
-  "guiTransform": {
-    "translation": {
-      "x": 0,
-      "y": 3,
-      "z": 0
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0.0625,
-      "z": 0.5
-    },
-    "scale": 1.25
-  },
-  "tpHandTransform": {
-    "translation": {
-      "x": -1,
-      "y": -0.2,
-      "z": -0.81
-    },
-    "rotation": {
-      "x": -69,
-      "y": 9,
-      "z": 4
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0.125,
-      "z": 0.5
-    },
-    "scale": 0.75
-  },
-  "groundTransform": {
-    "translation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "rotation": {
-      "x": 0,
-      "y": -45,
-      "z": 0
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0,
-      "z": 0.5
-    },
-    "scale": 5
-  }
+	"code": "castingmold-large-pane",
+	"class": "Block",
+	"variantgroups": [
+		{ "code": "color", "states": [ "blue", "red", "fire" ] },
+		{ "code": "materialtype", "states": [ "raw" ] }
+	],
+	"creativeinventory": { "general": [ "*" ], "construction": [ "*" ], "glassmakingglassware": [ "*" ] },
+	"behaviors": [
+		{ "name": "GroundStorable", "properties": { "layout": "SingleCenter" } },
+		{ "name": "Unplaceable", "__comment": "Cannot place here." },
+		{ "name": "RightClickPickup" }
+	],
+	"blockmaterial": "Ceramic",
+	"resistance": 1.5,
+	"replaceable": 700,
+	"lightAbsorption": 0,
+	"maxStackSize": 8,
+	"combustiblePropsByType": {
+		"castingmold-large-pane-fire-raw": {
+			"meltingPoint": 650,
+			"meltingDuration": 45,
+			"smeltedRatio": 1,
+			"smeltingType": "fire",
+			"smeltedStack": { "type": "block", "code": "castingmold-large-pane-fire-fired" },
+			"requiresContainer": false
+		},
+		"castingmold-large-pane-blue-raw": {
+			"meltingPoint": 650,
+			"meltingDuration": 45,
+			"smeltedRatio": 1,
+			"smeltingType": "fire",
+			"smeltedStack": { "type": "block", "code": "castingmold-large-pane-blue-fired" },
+			"requiresContainer": false
+		},
+		"castingmold-large-pane-red-raw": {
+			"meltingPoint": 650,
+			"meltingDuration": 45,
+			"smeltedRatio": 1,
+			"smeltingType": "fire",
+			"smeltedStack": { "type": "block", "code": "castingmold-large-pane-earthyorange-fired" },
+			"requiresContainer": false
+		}
+	},
+	"collisionbox": { "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.9375, "y2": 0.125, "z2": 0.9375 },
+	"selectionbox": { "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.9375, "y2": 0.125, "z2": 0.9375 },
+	"sideopaque": { "all": false },
+	"sidesolid": { "all": false },
+	"shape": { "base": "glassmakingglassware:block/castingmolds/castingmold-large-pane" },
+	"textures": { "all": { "base": "game:block/clay/{color}clay" } },
+	"guiTransform": { "translation": { "x": 0, "y": 3, "z": 0 }, "origin": { "x": 0.5, "y": 0.0625, "z": 0.5 }, "scale": 1.25 },
+	"tpHandTransform": { "translation": { "x": -1, "y": -0.2, "z": -0.81 }, "rotation": { "x": -69, "y": 9, "z": 4 }, "origin": { "x": 0.5, "y": 0.125, "z": 0.5 }, "scale": 0.75 },
+	"groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": -45, "z": 0 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 5 },
+	"heldRightReadyAnimation": "heldblockready",
+	"sounds": { "walk": "walk/stone" },
+	"attributes": { "reinforcable": true, "shelvable": false },
+	"attributesByType": {
+		"castingmold-large-pane-red-raw": {
+			"beehivekiln": {
+				"0": { "type": "block", "code": "castingmold-large-pane-tan-fired" },
+				"1": { "type": "block", "code": "castingmold-large-pane-orange-fired" },
+				"2": { "type": "block", "code": "castingmold-large-pane-red-fired" },
+				"3": { "type": "block", "code": "castingmold-large-pane-brown-fired" }
+			}
+		},
+		"castingmold-large-pane-blue-raw": {
+			"beehivekiln": {
+				"0": { "type": "block", "code": "castingmold-large-pane-cream-fired" },
+				"1": { "type": "block", "code": "castingmold-large-pane-gray-fired" },
+				"2": { "type": "block", "code": "castingmold-large-pane-black-fired" },
+				"3": { "type": "block", "code": "castingmold-large-pane-black-fired" }
+			}
+		},
+		"castingmold-large-pane-fire-raw": {
+			"beehivekiln": {
+				"0": { "type": "block", "code": "castingmold-large-pane-fire-fired" },
+				"1": { "type": "block", "code": "castingmold-large-pane-fire-fired" },
+				"2": { "type": "block", "code": "castingmold-large-pane-fire-fired" },
+				"3": { "type": "block", "code": "castingmold-large-pane-fire-fired" }
+			}
+		}
+	}
 }

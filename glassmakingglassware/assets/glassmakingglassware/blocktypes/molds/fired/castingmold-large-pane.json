@@ -1,139 +1,42 @@
 {
-  "code": "castingmold-large-pane",
-  "class": "glassmaking:castingmold",
-  "entityClass": "glassmaking:castingmold",
-
-  "behaviors": [
-    { "name": "Lockable" },
-    { "name": "UnstableFalling" }
-  ],
-  "variantgroups": [
-    {
-      "code": "color",
-      "states": [ "blue", "fire", "black", "brown", "cream", "earthyorange", "gray", "orange", "red", "tan" ]
-    },
-    {
-      "code": "materialtype",
-      "states": [ "fired" ]
-    }
-  ],
-  "shape": { "base": "glassmakingglassware:block/castingmolds/castingmold-large-pane" },
-  "textures": { "all": { "base": "game:block/clay/hardened/{color}" } },
-
-  "attributes": {
-    "reinforcable": true,
-    "glassmaking:castingmold": {
-      "recipe": {
-        "name": "glasstype",
-        "code": "game:*",
-        "amount": 250,
-        "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ]
-      },
-      "output": {
-        "type": "block",
-        "code": "glassware-large-pane-{glasstype}-unannealed"
-      }
-    },
-    "fillHeight": 2,
-    "fillQuadsByLevel": [
-      {
-        "x1": 1,
-        "z1": 1,
-        "x2": 15,
-        "z2": 15
-      },
-      {
-        "x1": 1,
-        "z1": 1,
-        "x2": 15,
-        "z2": 15
-      }
-    ]
-  },
-
-  "blockmaterial": "Ceramic",
-  "creativeinventory": {
-    "general": [ "*" ],
-    "construction": [ "*" ],
-    "glassmakingglassware": [ "*" ]
-  },
-  "replaceable": 700,
-  "resistance": 1.5,
-  "maxStackSize": 8,
-  "lightAbsorption": 0,
-  "sounds": {
-    "walk": "walk/stone"
-  },
-  "collisionbox": {
-    "x1": 0.0625,
-    "y1": 0,
-    "z1": 0.0625,
-    "x2": 0.9375,
-    "y2": 0.125,
-    "z2": 0.9375
-  },
-  "selectionbox": {
-    "x1": 0.0625,
-    "y1": 0,
-    "z1": 0.0625,
-    "x2": 0.9375,
-    "y2": 0.125,
-    "z2": 0.9375
-  },
-  "sideopaque": {
-    "all": false
-  },
-  "sidesolid": {
-    "all": false
-  },
-  "heldRightReadyAnimation": "heldblockready",
-  "guiTransform": {
-    "translation": {
-      "x": 0,
-      "y": 3,
-      "z": 0
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0.0625,
-      "z": 0.5
-    },
-    "scale": 1.25
-  },
-  "tpHandTransform": {
-    "translation": {
-      "x": -1,
-      "y": -0.2,
-      "z": -0.81
-    },
-    "rotation": {
-      "x": -69,
-      "y": 9,
-      "z": 4
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0.125,
-      "z": 0.5
-    },
-    "scale": 0.75
-  },
-  "groundTransform": {
-    "translation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "rotation": {
-      "x": 0,
-      "y": -45,
-      "z": 0
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0,
-      "z": 0.5
-    },
-    "scale": 5
-  }
+	"code": "castingmold-large-pane",
+	"class": "glassmaking:castingmold",
+	"entityClass": "glassmaking:castingmold",
+	"variantgroups": [
+		{ "code": "color", "states": [ "blue", "fire", "black", "brown", "cream", "earthyorange", "gray", "orange", "red", "tan" ] },
+		{ "code": "materialtype", "states": [ "fired" ] }
+	],
+	"creativeinventory": { "general": [ "*" ], "construction": [ "*" ], "glassmakingglassware": [ "*" ] },
+	"behaviors": [
+		{ "name": "Lockable" },
+		{ "name": "UnstableFalling" }
+	],
+	"blockmaterial": "Ceramic",
+	"resistance": 1.5,
+	"replaceable": 700,
+	"lightAbsorption": 0,
+	"maxStackSize": 8,
+	"collisionbox": { "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.9375, "y2": 0.125, "z2": 0.9375 },
+	"selectionbox": { "x1": 0.0625, "y1": 0, "z1": 0.0625, "x2": 0.9375, "y2": 0.125, "z2": 0.9375 },
+	"sideopaque": { "all": false },
+	"sidesolid": { "all": false },
+	"shape": { "base": "glassmakingglassware:block/castingmolds/castingmold-large-pane" },
+	"textures": { "all": { "base": "game:block/clay/hardened/{color}" } },
+	"guiTransform": { "translation": { "x": 0, "y": 3, "z": 0 }, "origin": { "x": 0.5, "y": 0.0625, "z": 0.5 }, "scale": 1.25 },
+	"tpHandTransform": { "translation": { "x": -1, "y": -0.2, "z": -0.81 }, "rotation": { "x": -69, "y": 9, "z": 4 }, "origin": { "x": 0.5, "y": 0.125, "z": 0.5 }, "scale": 0.75 },
+	"groundTransform": { "translation": { "x": 0, "y": 0, "z": 0 }, "rotation": { "x": 0, "y": -45, "z": 0 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 5 },
+	"heldRightReadyAnimation": "heldblockready",
+	"sounds": { "walk": "walk/stone" },
+	"attributes": {
+		"reinforcable": true,
+		"glassmaking:castingmold": {
+			"recipe": { "name": "glasstype", "code": "game:*", "amount": 250, "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ] },
+			"output": { "type": "block", "code": "glassware-large-pane-{glasstype}-unannealed" }
+		},
+		"fillHeight": 2,
+		"fillQuadsByLevel": [
+			{ "x1": 1, "z1": 1, "x2": 15, "z2": 15 },
+			{ "x1": 1, "z1": 1, "x2": 15, "z2": 15 }
+		]
+	}
 }

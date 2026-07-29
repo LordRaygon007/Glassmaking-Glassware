@@ -1,9 +1,6 @@
 {
 	"editor": { "allAngles": false, "entityTextureMode": false },
-	"textureWidth": 16,
-	"textureHeight": 16,
-	"textureSizes": {},
-  "textures": { "glass": "glass" },
+	"textures": { "glass": "glass" },
 	"elements": [
 		{
 			"name": "Pane1",
@@ -1956,5 +1953,8 @@
 				"down": { "texture": "#glass", "uv": [ 0, 0, 6, 6 ] }
 			}
 		}
-	]
+	],
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {}
 }

@@ -1,150 +1,135 @@
 {
-  "code": "glassware-potionflask-normal-{glasstype}",
-  "enabled": false,
-  "output": {
-    "type": "block",
-    "code": "glassware-potionflask-normal-{glasstype}-unannealed"
-  },
-  "steps": [
-    {
-      "name": "glasstype",
-      "tool": "glassintake",
-      "shape": {
-        "segments": 32,
-        "outer": [
-          [ -1.1, 0 ],
-          [ -1, 1 ],
-          [ 0, 2 ],
-          [ 1.5, 2 ],
-          [ 2.5, 1 ],
-          [ 2.6, 0 ]
-        ]
-      },
-      "code": "game:*",
-      "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ],
-      "amount": 75
-    },
-
-    {
-      "tool": "blowing",
-      "shape": {
-        "segments": 24,
-        "outer": [
-          {
-            "segments": 4,
-            "vertices": [
-              [ -1, 0 ],
-              [ -1, 1 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ -1, 1 ],
-              [ 0, 1.5 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 0, 1.5 ],
-              [ 1.6, 2.1 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 1.6, 2.1 ],
-              [ 2.8, 1.8 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 2.8, 1.8 ],
-              [ 3.8, 1.3 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 3.8, 1.3 ],
-              [ 4, 0 ]
-            ]
-          }
-        ]
-      },
-      "recipeAttributes": {
-        "time": 5
-      }
-    },
-
-    {
-      "tool": "flare",
-      "shape": {
-        "segments": 28,
-        "outer": [
-          {
-            "segments": 4,
-            "vertices": [
-              [ -1, 0 ],
-              [ -1, 2.5 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ -1, 2.5 ],
-              [ 2, 2.5 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 2, 2.5 ],
-              [ 2.5, 1.5 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 2.5, 1.5 ],
-              [ 3.5, 1.5 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 3.5, 1.5 ],
-              [ 3.5, 2.1 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 3.5, 2.1 ],
-              [ 4.5, 2.1 ]
-            ]
-          },
-          {
-            "segments": 4,
-            "vertices": [
-              [ 4.5, 2.1 ],
-              [ 4.5, 0 ]
-            ]
-          }
-        ]
-      },
-      "recipeAttributes": {
-        "time": 3
-      }
-    },
-
-    {
-      "tool": "cutoff",
-      "recipeAttributes": {
-        "time": 2
-      }
-    }
-  ]
+	"code": "glassware-potionflask-normal-{glasstype}",
+	"enabled": false,
+	"output": { "type": "block", "code": "glassware-potionflask-normal-{glasstype}-unannealed" },
+	"steps": [
+		{
+			"name": "glasstype",
+			"tool": "glassintake",
+			"shape": {
+				"segments": 32,
+				"outer": [
+					[ -1.1, 0 ],
+					[ -1, 1 ],
+					[ 0, 2 ],
+					[ 1.5, 2 ],
+					[ 2.5, 1 ],
+					[ 2.6, 0 ]
+				]
+			},
+			"code": "game:*",
+			"allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ],
+			"amount": 75
+		},
+		{
+			"tool": "blowing",
+			"shape": {
+				"segments": 24,
+				"outer": [
+					{
+						"segments": 4,
+						"vertices": [
+							[ -1, 0 ],
+							[ -1, 1 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ -1, 1 ],
+							[ 0, 1.5 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 0, 1.5 ],
+							[ 1.6, 2.1 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 1.6, 2.1 ],
+							[ 2.8, 1.8 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 2.8, 1.8 ],
+							[ 3.8, 1.3 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 3.8, 1.3 ],
+							[ 4, 0 ]
+						]
+					}
+				]
+			},
+			"recipeAttributes": { "time": 5 }
+		},
+		{
+			"tool": "flare",
+			"shape": {
+				"segments": 28,
+				"outer": [
+					{
+						"segments": 4,
+						"vertices": [
+							[ -1, 0 ],
+							[ -1, 2.5 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ -1, 2.5 ],
+							[ 2, 2.5 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 2, 2.5 ],
+							[ 2.5, 1.5 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 2.5, 1.5 ],
+							[ 3.5, 1.5 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 3.5, 1.5 ],
+							[ 3.5, 2.1 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 3.5, 2.1 ],
+							[ 4.5, 2.1 ]
+						]
+					},
+					{
+						"segments": 4,
+						"vertices": [
+							[ 4.5, 2.1 ],
+							[ 4.5, 0 ]
+						]
+					}
+				]
+			},
+			"recipeAttributes": { "time": 3 }
+		},
+		{ "tool": "cutoff", "recipeAttributes": { "time": 2 } }
+	]
 }

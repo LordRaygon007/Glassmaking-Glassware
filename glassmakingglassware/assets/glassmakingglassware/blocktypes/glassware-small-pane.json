@@ -1,152 +1,60 @@
 {
-  "code": "glassware-small-pane",
-  "creativeinventory": { "glassmakingglassware": [ "*" ] },
-  "variantgroups": [
-    {
-      "code": "glasstype",
-      "states": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ]
-    },
-    {
-      "code": "annealing",
-      "states": [ "unannealed", "annealed" ]
-    }
-  ],
-  "shape": { "base": "glassmakingglassware:block/general/glassware-small-pane" },
-  "textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
-  "drawtype": "json",
-  "blockmaterial": "Glass",
-  "faceCullMode": "MergeMaterial",
-  "resistance": 0.75,
-  "frostable": true,
-  "maxStackSize": 16,
-  "lightAbsorption": 0,
-  "sideopaque": { "all": false },
-  "sidesolid": { "all": false },
-  "renderpass": "transparent",
-  "behaviors": [
-    { "name": "RightClickPickup" },
-    { "name": "SneakPlacing" },
-    {
-      "name": "GroundStorable",
-      "properties": {
-        "layout": "Stacking",
-        "stackingModelByType": { "*": "glassmakingglassware:block/general/glassware-small-pane-pile" },
-        "stackingTextures": { "glass": "game:block/glass/{glasstype}" },
-        "modelItemsToStackSizeRatio": 1,
-        "upSolid": true,
-        "stackingCapacity": 128,
-        "transferQuantity": 1,
-        "bulkTransferQuantity": 4,
-        "collisionBox": {
-          "x1": 0,
-          "y1": 0,
-          "z1": 0,
-          "x2": 1,
-          "y2": 0.03125,
-          "z2": 1
-        },
-        "cbScaleYByLayer": 0.25
-      }
-    },
-    {
-      "name": "Unplaceable",
-      "__comment": "Cannot place here."
-    },
-    {
-      "name": "UnstableFalling",
-      "properties": {
-        "attachmentArea": {
-          "x1": 5,
-          "y1": 0,
-          "z1": 5,
-          "x2": 10,
-          "y2": 0,
-          "z2": 10
-        }
-      }
-    }
-  ],
-  "attributes": {
-    "shelvable": true,
-    "displaycaseable": true,
-    "annealOvenSize": 0.5
-  },
-  "attributesByType": {
-    "*-unannealed": {
-      "glassmaking:anneal": {
-        "temperature": {
-          "min": 200,
-          "max": 800
-        },
-        "time": 10800,
-        "output": {
-          "type": "block",
-          "code": "glassware-small-pane-{glasstype}-annealed"
-        }
-      }
-    }
-  },
-  "sounds": {
-    "place": "game:player/buildhigh",
-    "break": "game:block/glass",
-    "hit": "game:block/glass",
-    "walk": "game:walk/glass*",
-    "ambient": "game:environment/rainwindow",
-    "ambientBlockCount": 4,
-    "ambientSoundType": "Weather",
-    "ambientMaxDistanceMerge": 1
-  },
-  "collisionbox": {
-    "x1": 0.3125,
-    "y1": 0,
-    "z1": 0.3125,
-    "x2": 0.6875,
-    "y2": 0.125,
-    "z2": 0.6875
-  },
-  "selectionbox": {
-    "x1": 0.3125,
-    "y1": 0,
-    "z1": 0.3125,
-    "x2": 0.6875,
-    "y2": 0.125,
-    "z2": 0.6875
-  },
-  "guiTransform": {
-    "translation": {
-      "x": 0,
-      "y": 4,
-      "z": 0
-    },
-    "rotation": {
-      "x": -29,
-      "y": -45.3,
-      "z": -2
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0.0625,
-      "z": 0.5
-    },
-    "scale": 3.52
-  },
-  "groundTransform": { "scale": 5 },
-  "tpHandTransform": {
-    "translation": {
-      "x": -0.85,
-      "y": -0.15,
-      "z": -0.7
-    },
-    "rotation": {
-      "x": 110,
-      "y": -40,
-      "z": -88
-    },
-    "origin": {
-      "x": 0.5,
-      "y": 0.1,
-      "z": 0.5
-    },
-    "scale": 0.8
-  }
+	"code": "glassware-small-pane",
+	"variantgroups": [
+		{ "code": "glasstype", "states": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ] },
+		{ "code": "annealing", "states": [ "unannealed", "annealed" ] }
+	],
+	"creativeinventory": { "glassmakingglassware": [ "*" ] },
+	"behaviors": [
+		{ "name": "RightClickPickup" },
+		{ "name": "SneakPlacing" },
+		{
+			"name": "GroundStorable",
+			"properties": {
+				"layout": "Stacking",
+				"stackingModelByType": { "*": "glassmakingglassware:block/general/glassware-small-pane-pile" },
+				"stackingTextures": { "glass": "game:block/glass/{glasstype}" },
+				"modelItemsToStackSizeRatio": 1,
+				"upSolid": true,
+				"stackingCapacity": 128,
+				"transferQuantity": 1,
+				"bulkTransferQuantity": 4,
+				"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.03125, "z2": 1 },
+				"cbScaleYByLayer": 0.25
+			}
+		},
+		{ "name": "Unplaceable", "__comment": "Cannot place here." },
+		{ "name": "UnstableFalling", "properties": { "attachmentArea": { "x1": 5, "y1": 0, "z1": 5, "x2": 10, "y2": 0, "z2": 10 } } }
+	],
+	"blockmaterial": "Glass",
+	"resistance": 0.75,
+	"lightAbsorption": 0,
+	"drawtype": "json",
+	"maxStackSize": 16,
+	"frostable": true,
+	"collisionbox": { "x1": 0.3125, "y1": 0, "z1": 0.3125, "x2": 0.6875, "y2": 0.125, "z2": 0.6875 },
+	"selectionbox": { "x1": 0.3125, "y1": 0, "z1": 0.3125, "x2": 0.6875, "y2": 0.125, "z2": 0.6875 },
+	"sideopaque": { "all": false },
+	"sidesolid": { "all": false },
+	"faceCullMode": "MergeMaterial",
+	"renderpass": "transparent",
+	"shape": { "base": "glassmakingglassware:block/general/glassware-small-pane" },
+	"textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
+	"guiTransform": { "translation": { "x": 0, "y": 4, "z": 0 }, "rotation": { "x": -29, "y": -45.3, "z": -2 }, "origin": { "x": 0.5, "y": 0.0625, "z": 0.5 }, "scale": 3.52 },
+	"tpHandTransform": { "translation": { "x": -0.85, "y": -0.15, "z": -0.7 }, "rotation": { "x": 110, "y": -40, "z": -88 }, "origin": { "x": 0.5, "y": 0.1, "z": 0.5 }, "scale": 0.8 },
+	"groundTransform": { "scale": 5 },
+	"sounds": {
+		"place": "game:player/buildhigh",
+		"break": "game:block/glass",
+		"hit": "game:block/glass",
+		"walk": "game:walk/glass*",
+		"ambient": "game:environment/rainwindow",
+		"ambientBlockCount": 4,
+		"ambientSoundType": "Weather",
+		"ambientMaxDistanceMerge": 1
+	},
+	"attributes": { "shelvable": true, "displaycaseable": true, "annealOvenSize": 0.5 },
+	"attributesByType": {
+		"*-unannealed": { "glassmaking:anneal": { "temperature": { "min": 200, "max": 800 }, "time": 10800, "output": { "type": "block", "code": "glassware-small-pane-{glasstype}-annealed" } } }
+	}
 }
