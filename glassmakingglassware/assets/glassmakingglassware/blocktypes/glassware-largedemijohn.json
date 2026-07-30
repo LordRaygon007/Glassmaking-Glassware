@@ -17,7 +17,7 @@
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
 	"renderpass": "transparent",
-	"shape": { "base": "glassmakingglassware:shapes/block/t&g/glassware-largedemijohn" },
+	"shape": { "base": "tankardsandgoblets:block/largedemijohnbottleuncorked" },
 	"textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
 	"guiTransform": { "translation": { "x": 0, "y": -6, "z": 0 }, "rotation": { "x": -12, "y": -100, "z": 12 }, "origin": { "x": 0.5, "y": 0.25, "z": 0.5 }, "scale": 3.96 },
 	"tpHandTransform": { "translation": { "x": -0.71, "y": -0.23, "z": 0.01 }, "rotation": { "x": 107, "y": -9, "z": -75 }, "scale": 2.3 },

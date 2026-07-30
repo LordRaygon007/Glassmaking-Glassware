@@ -13,7 +13,7 @@
 		{ "name": "UnstableFalling", "properties": { "attachmentArea": { "x1": 5, "y1": 0, "z1": 5, "x2": 10, "y2": 0, "z2": 10 } } }
 	],
 	"blockmaterial": "Glass",
-	"resistance": 0.5,
+	"resistance": 0.25,
 	"lightAbsorption": 0,
 	"maxStackSize": 16,
 	"frostable": true,
@@ -24,7 +24,7 @@
 	"sidesolid": { "all": false },
 	"emitsideao": { "all": false },
 	"renderpass": "transparent",
-	"shape": { "base": "glassmakingglassware:shapes/block/aca/glassware-glassbottle" },
+	"shape": { "base": "aculinaryartillery:block/bottle/openedbottleglass" },
 	"textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
 	"guiTransform": { "rotation": { "x": -22.6, "y": -125, "z": 0 }, "origin": { "x": 0.5, "y": 0.18, "z": 0.5 }, "scale": 3.09 },
 	"tpHandTransform": { "translation": { "x": -0.66, "y": -0.03, "z": -0.65 }, "rotation": { "x": -139, "y": 9, "z": -118 }, "origin": { "x": 0.5, "y": 0.01, "z": 0.5 }, "scale": 0.81 },

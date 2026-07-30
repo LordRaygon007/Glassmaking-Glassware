@@ -1,5 +1,5 @@
 {
-	"code": "t&g-winebottle",
+	"code": "glassware-winebottle",
 	"variantgroups": [
 		{ "code": "glasstype", "states": [ "red", "blue", "green", "plain", "brown", "smoky" ] },
 		{ "code": "annealing", "states": [ "unannealed" ] }
@@ -18,7 +18,7 @@
 	"liquidSelectable": 1,
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
-	"shape": { "base": "shapes/block/t&g/glassware-winebottle" },
+	"shape": { "base": "tankardsandgoblets:block/winebottleuncorked" },
 	"textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
 	"guiTransform": { "origin": { "x": 0.5, "y": 0.25, "z": 0.5 }, "rotation": { "x": -12, "y": -100, "z": 12 }, "scale": 2.8 },
 	"tpHandTransform": { "translation": { "x": -0.49, "y": -0.4, "z": -0.42 }, "rotation": { "x": 90, "y": -5, "z": -90 }, "scale": 1.2 },

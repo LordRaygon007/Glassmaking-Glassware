@@ -27,7 +27,7 @@
 		{ "name": "UnstableFalling" }
 	],
 	"blockmaterial": "Glass",
-	"resistance": 0.75,
+	"resistance": 0.25,
 	"lightAbsorption": 0,
 	"drawtype": "json",
 	"maxStackSize": 8,
