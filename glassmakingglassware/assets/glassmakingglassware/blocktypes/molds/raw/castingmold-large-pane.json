@@ -14,7 +14,7 @@
 	"blockmaterial": "Ceramic",
 	"resistance": 1.5,
 	"replaceable": 700,
-	"lightAbsorption": 0,
+	"lightabsorption": 1,
 	"maxStackSize": 8,
 	"combustiblePropsByType": {
 		"castingmold-large-pane-fire-raw": {

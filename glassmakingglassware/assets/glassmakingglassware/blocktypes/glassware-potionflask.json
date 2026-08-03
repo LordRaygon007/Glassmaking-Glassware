@@ -6,59 +6,104 @@
 		{ "code": "annealing", "states": [ "unannealed", "annealed" ] }
 	],
 	"creativeinventory": { "glassmakingglassware": [ "*" ] },
+	"attributes": { "shelvable": true, "displaycaseable": true, "annealOvenSize": 0.5 },
+	"attributesByType": {
+		"*-unannealed": {
+			"glassmaking:anneal": {
+				"temperature": { "min": 200, "max": 800 },
+				"time": 10800,
+				"output": { "type": "block", "code": "glassware-potionflask-{flask}-{glasstype}-annealed" }
+			}
+		}
+	},
 	"behaviors": [
 		{ "name": "RightClickPickup" },
 		{ "name": "SneakPlacing" },
-		{ "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.4375, "z2": 1 } } },
+		{
+			"name": "GroundStorable",
+			"properties": {
+				"layout": "Quadrants",
+				"collisionSelectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.4375, "z2": 1 }
+			}
+		},
 		{ "name": "Unplaceable", "__comment": "Cannot place here." },
-		{ "name": "UnstableFalling", "properties": { "attachmentArea": { "x1": 5, "y1": 0, "z1": 5, "x2": 10, "y2": 0, "z2": 10 } } }
+		{
+			"name": "UnstableFalling",
+			"properties": {
+				"attachmentArea": { "x1": 5, "y1": 0, "z1": 5, "x2": 10, "y2": 0, "z2": 10 }
+			}
+		}
 	],
 	"blockmaterial": "Glass",
 	"resistance": 0.25,
-	"lightAbsorption": 0,
+	"lightabsorption": 1,
 	"maxStackSize": 16,
-	"frostable": true,
-	"collisionbox": { "x1": 0.375, "y1": 0, "z1": 0.375, "x2": 0.625, "y2": 0.4375, "z2": 0.625 },
-	"selectionbox": { "x1": 0.375, "y1": 0, "z1": 0.375, "x2": 0.625, "y2": 0.4375, "z2": 0.625 },
-	"sideao": { "all": true },
-	"sideopaque": { "all": false },
-	"sidesolid": { "all": false },
-	"emitsideao": { "all": false },
-	"renderpass": "transparent",
 	"shapeByType": {
 		"*-round-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-round" },
 		"*-tube-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-tube" },
 		"*-normal-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-normal" },
 		"*-throwable-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-throwable" }
 	},
-	"textures": { "glass": { "base": "game:block/glass/{glasstype}" } },
+	"textures": {
+		"glass": { "base": "game:block/glass/{glasstype}" }
+	},
+	"sounds": { "place": "game:player/buildhigh", "break": "game:block/glass", "hit": "game:block/glass", "walk": "game:walk/glass*" },
+	"frostable": true,
+	"collisionSelectionBox": { "x1": 0.375, "y1": 0, "z1": 0.375, "x2": 0.625, "y2": 0.4375, "z2": 0.625 },
+	"sideopaque": { "all": false },
+	"sidesolid": { "all": false },
 	"guiTransformByType": {
-		"*-tube-*": { "translation": { "x": 0, "y": 3, "z": 0 }, "origin": { "x": 0.5, "y": 0.2, "z": 0.5 }, "scale": 2 },
-		"*": { "translation": { "x": 0, "y": 3, "z": 0 }, "origin": { "x": 0.5, "y": 0.175, "z": 0.5 }, "scale": 2.75 }
+		"*-tube-*": {
+			"translation": { "x": 0, "y": 3, "z": 0 },
+			"origin": { "x": 0.5, "y": 0.2, "z": 0.5 },
+			"scale": 2
+		},
+		"*": {
+			"translation": { "x": 0, "y": 3, "z": 0 },
+			"origin": { "x": 0.5, "y": 0.175, "z": 0.5 },
+			"scale": 2.75
+		}
 	},
 	"tpHandTransformByType": {
-		"*-tube-*": { "translation": { "x": -1.1502792, "y": 0.005155392, "z": -1.0239975 }, "rotation": { "x": 0, "y": 0, "z": -74 }, "origin": { "x": 0.5, "y": 0, "z": 0.51 }, "scale": 0.5 },
-		"*-round-*": { "translation": { "x": -0.9034582, "y": 0.026922278, "z": -0.80446714 }, "rotation": { "x": 0, "y": 0, "z": -90 }, "origin": { "x": 0.5, "y": 0, "z": 0.51 }, "scale": 0.66 },
-		"*-normal-*": { "translation": { "x": -0.94682574, "y": 0.0065376395, "z": -0.80731374 }, "rotation": { "x": 0, "y": 0, "z": -90 }, "origin": { "x": 0.5, "y": 0.05, "z": 0.51 }, "scale": 0.66 },
-		"*-throwable-*": { "translation": { "x": -1.1982889, "y": -0.11793123, "z": -1.023327 }, "rotation": { "x": 0, "y": 0, "z": -90 }, "origin": { "x": 0.5, "y": 0.05, "z": 0.51 }, "scale": 0.5 }
+		"*-tube-*": {
+			"translation": { "x": -1.1502792, "y": 0.005155392, "z": -1.0239975 },
+			"rotation": { "x": 0, "y": 0, "z": -74 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.51 },
+			"scale": 0.5
+		},
+		"*-round-*": {
+			"translation": { "x": -0.9034582, "y": 0.026922278, "z": -0.80446714 },
+			"rotation": { "x": 0, "y": 0, "z": -90 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.51 },
+			"scale": 0.66
+		},
+		"*-normal-*": {
+			"translation": { "x": -0.94682574, "y": 0.0065376395, "z": -0.80731374 },
+			"rotation": { "x": 0, "y": 0, "z": -90 },
+			"origin": { "x": 0.5, "y": 0.05, "z": 0.51 },
+			"scale": 0.66
+		},
+		"*-throwable-*": {
+			"translation": { "x": -1.1982889, "y": -0.11793123, "z": -1.023327 },
+			"rotation": { "x": 0, "y": 0, "z": -90 },
+			"origin": { "x": 0.5, "y": 0.05, "z": 0.51 },
+			"scale": 0.5
+		}
 	},
 	"fpHandTransformByType": {
-		"*-tube-*": { "translation": { "x": 0, "y": 0.4, "z": 0 }, "rotation": { "x": 0, "y": -14, "z": 0 }, "scale": 1.5 },
-		"*": { "translation": { "x": 0, "y": 0.4, "z": 0 }, "rotation": { "x": 0, "y": -14, "z": 0 }, "scale": 2 }
+		"*-tube-*": {
+			"translation": { "x": 0, "y": 0.4, "z": 0 },
+			"rotation": { "x": 0, "y": -14, "z": 0 },
+			"scale": 1.5
+		},
+		"*": {
+			"translation": { "x": 0, "y": 0.4, "z": 0 },
+			"rotation": { "x": 0, "y": -14, "z": 0 },
+			"scale": 2
+		}
 	},
-	"groundTransformByType": { "*-tube-*": { "scale": 2 }, "*": { "scale": 2.5 } },
-	"sounds": {
-		"place": "game:player/buildhigh",
-		"break": "game:block/glass",
-		"hit": "game:block/glass",
-		"walk": "game:walk/glass*",
-		"ambient": "game:environment/rainwindow",
-		"ambientBlockCount": 4,
-		"ambientSoundType": "Weather",
-		"ambientMaxDistanceMerge": 1
-	},
-	"attributes": { "shelvable": true, "displaycaseable": true, "annealOvenSize": 0.5 },
-	"attributesByType": {
-		"*-unannealed": { "glassmaking:anneal": { "temperature": { "min": 200, "max": 800 }, "time": 10800, "output": { "type": "block", "code": "glassware-potionflask-{flask}-{glasstype}-annealed" } } }
+	"groundTransformByType": {
+		"*-tube-*": { "scale": 2 },
+		"*": { "scale": 2.5 }
 	}
 }

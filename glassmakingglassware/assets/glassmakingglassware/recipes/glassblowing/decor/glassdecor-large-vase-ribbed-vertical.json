@@ -1,0 +1,48 @@
+{
+  // TODO
+  "code": "glassdecor-large-vase-ribbed-vertical-{glasstype}",
+  "enabled": false,
+  "output": {
+    "type": "block",
+    "code": "glassdecor-large-vase-ribbed-vertical-{glasstype}-unannealed"
+  },
+  "steps": [
+    {
+      "name": "glasstype",
+      "tool": "glassintake",
+      "shape":,
+      "code": "game:*",
+      "allowedVariants": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ],
+      "amount": 250
+    },
+    {
+      "tool": "blowing",
+      "shape":,
+      "recipeAttributes": { "time": 2 }
+    },
+    {
+      "tool": "flatten",
+      "shape":,
+      "recipeAttributes": {
+        "time": 2,
+        "consume": "0.1"
+      }
+    },
+    {
+      "tool": "incise",
+      "shape":,
+      "recipeAttributes": {
+        "time": 2
+      }
+    },
+    {
+      "tool": "flare",
+      "shape":,
+      "recipeAttributes": { "time": 2 }
+    },
+    {
+      "tool": "cutoff",
+      "recipeAttributes": { "time": 2 }
+    }
+  ]
+}

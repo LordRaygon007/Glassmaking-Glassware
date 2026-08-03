@@ -1,18 +1,24 @@
 {
-	"code": "glassware-large-pane",
-	"class": "Block",
+	"code": "glassdecor-large-vase",
 	"variantgroups": [
 		{ "code": "glasstype", "states": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ] },
+		{ "code": "finish", "states": [ "smooth", "ribbed-horizontal" ] },
 		{ "code": "annealing", "states": [ "unannealed", "annealed" ] }
 	],
 	"creativeinventory": { "glassmakingglassware": [ "*" ] },
-	"attributes": { "shelvable": true, "displaycaseable": true, "annealOvenSize": 1.0 },
+	"attributes": {
+		"annealOvenSize": 1.0,
+		"groundStorageTransform": {
+			"translation": { "x": 0, "y": 0.201, "z": 0 },
+			"scale": 1.4
+		}
+	},
 	"attributesByType": {
 		"*-unannealed": {
 			"glassmaking:anneal": {
 				"temperature": { "min": 200, "max": 800 },
 				"time": 10800,
-				"output": { "type": "block", "code": "glassware-large-pane-{glasstype}-annealed" }
+				"output": { "type": "block", "code": "glassware-large-vase-{finish}-{glasstype}-annealed" }
 			}
 		}
 	},
@@ -21,18 +27,7 @@
 		{ "name": "SneakPlacing" },
 		{
 			"name": "GroundStorable",
-			"properties": {
-				"layout": "Stacking",
-				"stackingModelByType": { "*": "glassmakingglassware:block/general/glassware-large-pane-pile" },
-				"stackingTextures": { "glass": "game:block/glass/{glasstype}" },
-				"modelItemsToStackSizeRatio": 1,
-				"upSolid": true,
-				"stackingCapacity": 32,
-				"transferQuantity": 1,
-				"bulkTransferQuantity": 4,
-				"collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.03125, "z2": 1 },
-				"cbScaleYByLayer": 1
-			}
+			"properties": { "layout": "SingleCenter" }
 		},
 		{ "name": "Unplaceable", "__comment": "Cannot place here." },
 		{ "name": "UnstableFalling" }
@@ -41,30 +36,30 @@
 	"resistance": 0.25,
 	"lightabsorption": 1,
 	"drawtype": "json",
-	"maxStackSize": 8,
-	"shape": { "base": "glassmakingglassware:block/general/glassware-large-pane" },
+	"maxStackSize": 1,
 	"textures": {
-		"glass": { "base": "game:block/glass/{glasstype}" }
+		"default": { "base": "game:block/glass/{glasstype}" }
 	},
-	"sounds": {
-		"place": "game:player/buildhigh",
-		"break": "game:block/glass",
-		"hit": "game:block/glass",
-		"walk": "game:walk/glass*"
+	"shapeByType": {
+		"*-smooth-*": { "base": "block/decor/glassdecor-large-vase-smooth" },
+		"*-ribbed-horizontal-*": { "base": "block/decor/glassdecor-large-vase-ribbed-horizontal" }
 	},
+	"sounds": { "place": "game:player/buildhigh", "break": "game:block/glass", "hit": "game:block/glass", "walk": "game:walk/glass*" },
 	"frostable": true,
+	"collisionSelectionBox": { "x1": 0.125, "y1": 0, "z1": 0.125, "x2": 0.875, "y2": 1.2, "z2": 0.875 },
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
-	"faceCullMode": "MergeMaterial",
+	"renderpass": "Transparent",
 	"guiTransform": {
-		"translation": { "x": 0, "y": 3, "z": 0 },
+		"translation": { "x": 0, "y": 14, "z": 0 },
+		"rotation": { "x": -22, "y": -50, "z": 0 },
 		"origin": { "x": 0.5, "y": 0.0625, "z": 0.5 },
-		"scale": 1.25
+		"scale": 1.55
 	},
 	"tpHandTransform": {
-		"translation": { "x": -0.55, "y": -0.33, "z": 0.11 },
-		"rotation": { "x": 87, "y": 19, "z": -10 },
-		"scale": 0.9
+		"translation": { "x": -0.55, "y": -0.33, "z": -0.39 },
+		"rotation": { "x": 83, "y": -1, "z": -92 },
+		"scale": 1
 	},
 	"groundTransform": {
 		"translation": { "x": 0, "y": 0, "z": 0 },
