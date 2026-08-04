@@ -1,6 +1,6 @@
 {
 	"code": "glassware-small-pane",
-	"class": "Block",
+	"class": "BlockRainAmbient",
 	"variantgroups": [
 		{ "code": "glasstype", "states": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ] },
 		{ "code": "annealing", "states": [ "unannealed", "annealed" ] }
@@ -23,7 +23,7 @@
 			"name": "GroundStorable",
 			"properties": {
 				"layout": "Stacking",
-				"stackingModelByType": { "*": "glassmakingglassware:block/general/glassware-small-pane-pile" },
+				"stackingModelByType": { "*": "block/general/glassware-small-pane-pile" },
 				"stackingTextures": { "glass": "game:block/glass/{glasstype}" },
 				"modelItemsToStackSizeRatio": 1,
 				"upSolid": true,
@@ -34,33 +34,39 @@
 				"cbScaleYByLayer": 0.25
 			}
 		},
-		{ "name": "Unplaceable", "__comment": "Cannot place here." },
-		{ "name": "UnstableFalling" }
+		{
+			"name": "UnstableFalling",
+			"properties": { "fallsound": "game:block/chandelier-break" }
+		}
 	],
 	"blockmaterial": "Glass",
 	"resistance": 0.25,
 	"lightabsorption": 1,
 	"drawtype": "json",
 	"maxStackSize": 16,
-	"shape": { "base": "glassmakingglassware:block/general/glassware-small-pane" },
 	"textures": {
 		"glass": { "base": "game:block/glass/{glasstype}" }
 	},
+	"shape": { "base": "block/general/glassware-small-pane" },
 	"sounds": {
 		"place": "game:player/buildhigh",
 		"break": "game:block/glass",
 		"hit": "game:block/glass",
-		"walk": "game:walk/glass*"
+		"walk": "game:walk/glass*",
+		"ambient": "game:environment/rainwindow",
+		"ambientBlockCount": 4,
+		"ambientSoundType": "Weather",
+		"ambientMaxDistanceMerge": 1
 	},
 	"frostable": true,
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
-	"faceCullMode": "MergeMaterial",
+	"renderpass": "Transparent",
+	"vertexFlags": { "zOffset": 2, "shiny": true },
 	"guiTransform": {
-		"translation": { "x": 0, "y": 4, "z": 0 },
 		"rotation": { "x": -29, "y": -45.3, "z": -2 },
 		"origin": { "x": 0.5, "y": 0.0625, "z": 0.5 },
-		"scale": 3.52
+		"scale": 2
 	},
 	"tpHandTransform": {
 		"translation": { "x": -0.85, "y": -0.15, "z": -0.7 },

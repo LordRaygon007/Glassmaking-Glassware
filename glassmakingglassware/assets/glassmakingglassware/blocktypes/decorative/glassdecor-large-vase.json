@@ -1,17 +1,14 @@
 {
 	"code": "glassdecor-large-vase",
+	"class": "BlockRainAmbient",
 	"variantgroups": [
-		{ "code": "glasstype", "states": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ] },
 		{ "code": "finish", "states": [ "smooth", "ribbed-horizontal" ] },
+		{ "code": "glasstype", "states": [ "plain", "quartz", "vintage", "smoky", "red", "blue", "green", "yellow", "pink", "brown", "violet" ] },
 		{ "code": "annealing", "states": [ "unannealed", "annealed" ] }
 	],
 	"creativeinventory": { "glassmakingglassware": [ "*" ] },
 	"attributes": {
-		"annealOvenSize": 1.0,
-		"groundStorageTransform": {
-			"translation": { "x": 0, "y": 0.201, "z": 0 },
-			"scale": 1.4
-		}
+		"annealOvenSize": 1.0
 	},
 	"attributesByType": {
 		"*-unannealed": {
@@ -26,11 +23,9 @@
 		{ "name": "RightClickPickup" },
 		{ "name": "SneakPlacing" },
 		{
-			"name": "GroundStorable",
-			"properties": { "layout": "SingleCenter" }
-		},
-		{ "name": "Unplaceable", "__comment": "Cannot place here." },
-		{ "name": "UnstableFalling" }
+			"name": "UnstableFalling",
+			"properties": { "fallsound": "game:block/chandelier-break" }
+		}
 	],
 	"blockmaterial": "Glass",
 	"resistance": 0.25,
@@ -44,12 +39,22 @@
 		"*-smooth-*": { "base": "block/decor/glassdecor-large-vase-smooth" },
 		"*-ribbed-horizontal-*": { "base": "block/decor/glassdecor-large-vase-ribbed-horizontal" }
 	},
-	"sounds": { "place": "game:player/buildhigh", "break": "game:block/glass", "hit": "game:block/glass", "walk": "game:walk/glass*" },
+	"sounds": {
+		"place": "game:player/buildhigh",
+		"break": "game:block/glass",
+		"hit": "game:block/glass",
+		"walk": "game:walk/glass*",
+		"ambient": "game:environment/rainwindow",
+		"ambientBlockCount": 4,
+		"ambientSoundType": "Weather",
+		"ambientMaxDistanceMerge": 1
+	},
 	"frostable": true,
 	"collisionSelectionBox": { "x1": 0.125, "y1": 0, "z1": 0.125, "x2": 0.875, "y2": 1.2, "z2": 0.875 },
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
 	"renderpass": "Transparent",
+	"vertexFlags": { "zOffset": 2, "shiny": true },
 	"guiTransform": {
 		"translation": { "x": 0, "y": 14, "z": 0 },
 		"rotation": { "x": -22, "y": -50, "z": 0 },
