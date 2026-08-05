@@ -2,17 +2,27 @@
 	"code": "glassware-potionflask",
 	"variantgroups": [
 		{ "code": "flask", "states": [ "normal", "round", "tube", "throwable" ] },
-		{ "code": "glasstype", "states": [ "plain", "quartz", "green", "blue", "violet", "red", "yellow", "brown", "vintage", "smoky", "pink" ] },
+		{
+			"code": "glasstype",
+			"states": [ "plain", "quartz", "green", "blue", "violet", "red", "yellow", "brown", "vintage", "smoky", "pink" ]
+		},
 		{ "code": "annealing", "states": [ "unannealed", "annealed" ] }
 	],
 	"creativeinventory": { "glassmakingglassware": [ "*" ] },
-	"attributes": { "shelvable": true, "displaycaseable": true, "annealOvenSize": 0.5 },
+	"attributes": {
+		"shelvable": true,
+		"displaycaseable": true,
+		"annealOvenSize": 0.5
+	},
 	"attributesByType": {
 		"*-unannealed": {
 			"glassmaking:anneal": {
 				"temperature": { "min": 200, "max": 800 },
 				"time": 10800,
-				"output": { "type": "block", "code": "glassware-potionflask-{flask}-{glasstype}-annealed" }
+				"output": {
+					"type": "block",
+					"code": "glassware-potionflask-{flask}-{glasstype}-annealed"
+				}
 			}
 		}
 	},
@@ -23,33 +33,58 @@
 			"name": "GroundStorable",
 			"properties": {
 				"layout": "Quadrants",
-				"collisionSelectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.4375, "z2": 1 }
+				"collisionSelectionBox": {
+					"x1": 0,
+					"y1": 0,
+					"z1": 0,
+					"x2": 1,
+					"y2": 0.4375,
+					"z2": 1
+				}
 			}
 		},
-		{ "name": "Unplaceable", "__comment": "Cannot place here." },
+		{ "name": "Unplaceable" },
 		{
 			"name": "UnstableFalling",
-			"properties": {
-				"attachmentArea": { "x1": 5, "y1": 0, "z1": 5, "x2": 10, "y2": 0, "z2": 10 }
-			}
+			"properties": { "fallsound": "game:block/chandelier-break" }
 		}
 	],
 	"blockmaterial": "Glass",
 	"resistance": 0.25,
 	"lightabsorption": 1,
 	"maxStackSize": 16,
-	"shapeByType": {
-		"*-round-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-round" },
-		"*-tube-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-tube" },
-		"*-normal-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-normal" },
-		"*-throwable-*": { "base": "glassmakingglassware:block/alchemy/glassware-potionflask-throwable" }
-	},
 	"textures": {
 		"glass": { "base": "game:block/glass/{glasstype}" }
 	},
-	"sounds": { "place": "game:player/buildhigh", "break": "game:block/glass", "hit": "game:block/glass", "walk": "game:walk/glass*" },
+	"shapeByType": {
+		"*-round-*": {
+			"base": "glassmakingglassware:block/alchemy/glassware-potionflask-round"
+		},
+		"*-tube-*": {
+			"base": "glassmakingglassware:block/alchemy/glassware-potionflask-tube"
+		},
+		"*-normal-*": {
+			"base": "glassmakingglassware:block/alchemy/glassware-potionflask-normal"
+		},
+		"*-throwable-*": {
+			"base": "glassmakingglassware:block/alchemy/glassware-potionflask-throwable"
+		}
+	},
+	"sounds": {
+		"place": "game:player/buildhigh",
+		"break": "game:block/glass",
+		"hit": "game:block/glass",
+		"walk": "game:walk/glass*"
+	},
 	"frostable": true,
-	"collisionSelectionBox": { "x1": 0.375, "y1": 0, "z1": 0.375, "x2": 0.625, "y2": 0.4375, "z2": 0.625 },
+	"collisionSelectionBox": {
+		"x1": 0.375,
+		"y1": 0,
+		"z1": 0.375,
+		"x2": 0.625,
+		"y2": 0.4375,
+		"z2": 0.625
+	},
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
 	"guiTransformByType": {

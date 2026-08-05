@@ -9,7 +9,7 @@
 	"creativeinventory": { "construction": [ "*" ], "glassmakingglassware": [ "*" ] },
 	"behaviors": [
 		{ "name": "Lockable" },
-		{ "name": "Unplaceable", "__comment": "Cannot place here." },
+		{ "name": "Unplaceable" },
 		{ "name": "UnstableFalling" }
 	],
 	"blockmaterial": "Ceramic",

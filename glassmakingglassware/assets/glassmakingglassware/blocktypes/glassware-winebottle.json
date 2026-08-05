@@ -1,7 +1,10 @@
 {
 	"code": "glassware-winebottle",
 	"variantgroups": [
-		{ "code": "glasstype", "states": [ "red", "blue", "green", "plain", "brown", "smoky" ] },
+		{
+			"code": "glasstype",
+			"states": [ "red", "blue", "green", "plain", "brown", "smoky" ]
+		},
 		{ "code": "annealing", "states": [ "unannealed" ] }
 	],
 	"creativeinventory": { "glassmakingglassware": [ "*" ] },
@@ -42,7 +45,10 @@
 		"glassmaking:anneal": {
 			"temperature": { "min": 200, "max": 800 },
 			"time": 10800,
-			"output": { "type": "block", "code": "tankardsandgoblets:t&g-winebottle-{glasstype}" }
+			"output": {
+				"type": "block",
+				"code": "tankardsandgoblets:t&g-winebottle-{glasstype}"
+			}
 		},
 		"annealOvenSize": 1,
 		"shelvable": "Halves",
@@ -57,10 +63,21 @@
 			"name": "GroundStorable",
 			"properties": {
 				"layout": "Quadrants",
-				"collisionSelectionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 }
+				"collisionSelectionBox": {
+					"x1": 0,
+					"y1": 0,
+					"z1": 0,
+					"x2": 1,
+					"y2": 0.125,
+					"z2": 1
+				}
 			}
 		},
-		{ "name": "Unplaceable", "__comment": "Cannot place here." },
+		{
+			"name": "UnstableFalling",
+			"properties": { "fallsound": "game:block/chandelier-break" }
+		},
+		{ "name": "Unplaceable" },
 		{ "name": "RightClickPickup" }
 	],
 	"blockmaterial": "Glass",
@@ -69,11 +86,16 @@
 	"lightabsorption": 1,
 	"maxStackSize": 4,
 	"liquidSelectable": 1,
-	"shape": { "base": "tankardsandgoblets:block/winebottleuncorked" },
 	"textures": {
 		"glass": { "base": "game:block/glass/{glasstype}*" }
 	},
-	"sounds": { "place": "game:player/buildhigh", "break": "game:block/glass", "hit": "game:block/glass", "walk": "game:walk/glass*" },
+	"shape": { "base": "tankardsandgoblets:block/winebottleuncorked" },
+	"sounds": {
+		"place": "game:player/buildhigh",
+		"break": "game:block/glass",
+		"hit": "game:block/glass",
+		"walk": "game:walk/glass*"
+	},
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
 	"guiTransform": {
