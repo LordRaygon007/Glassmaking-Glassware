@@ -33,14 +33,7 @@
 			"name": "GroundStorable",
 			"properties": {
 				"layout": "Quadrants",
-				"collisionSelectionBox": {
-					"x1": 0,
-					"y1": 0,
-					"z1": 0,
-					"x2": 1,
-					"y2": 0.4375,
-					"z2": 1
-				}
+				"placeRemoveSound": "game:sounds/walk/glass*"
 			}
 		},
 		{ "name": "Unplaceable" },
@@ -70,20 +63,14 @@
 			"base": "glassmakingglassware:block/alchemy/glassware-potionflask-throwable"
 		}
 	},
-	"sounds": {
-		"place": "game:player/buildhigh",
-		"break": "game:block/glass",
-		"hit": "game:block/glass",
-		"walk": "game:walk/glass*"
-	},
 	"frostable": true,
 	"collisionSelectionBox": {
-		"x1": 0.375,
+		"x1": 0,
 		"y1": 0,
-		"z1": 0.375,
-		"x2": 0.625,
+		"z1": 0,
+		"x2": 1,
 		"y2": 0.4375,
-		"z2": 0.625
+		"z2": 1
 	},
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },

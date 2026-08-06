@@ -63,14 +63,7 @@
 			"name": "GroundStorable",
 			"properties": {
 				"layout": "Quadrants",
-				"collisionSelectionBox": {
-					"x1": 0,
-					"y1": 0,
-					"z1": 0,
-					"x2": 1,
-					"y2": 0.125,
-					"z2": 1
-				}
+				"placeRemoveSound": "game:sounds/walk/glass*"
 			}
 		},
 		{
@@ -90,11 +83,13 @@
 		"glass": { "base": "game:block/glass/{glasstype}*" }
 	},
 	"shape": { "base": "tankardsandgoblets:block/winebottleuncorked" },
-	"sounds": {
-		"place": "game:player/buildhigh",
-		"break": "game:block/glass",
-		"hit": "game:block/glass",
-		"walk": "game:walk/glass*"
+	"collisionSelectionBox": {
+		"x1": 0,
+		"y1": 0,
+		"z1": 0,
+		"x2": 1,
+		"y2": 0.125,
+		"z2": 1
 	},
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },

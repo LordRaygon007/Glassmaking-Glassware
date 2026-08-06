@@ -32,14 +32,8 @@
 		{
 			"name": "GroundStorable",
 			"properties": {
-				"collisionSelectionBox": {
-					"x1": 0,
-					"y1": 0,
-					"z1": 0,
-					"x2": 1,
-					"y2": 1,
-					"z2": 1
-				}
+				"layout": "SingleCenter",
+				"placeRemoveSound": "game:sounds/walk/glass*"
 			}
 		},
 		{ "name": "Unplaceable" },
@@ -64,12 +58,6 @@
 			"base": "block/decor/glassdecor-large-vase-ribbed-horizontal"
 		}
 	},
-	"sounds": {
-		"place": "game:player/buildhigh",
-		"break": "game:block/glass",
-		"hit": "game:block/glass",
-		"walk": "game:walk/glass*"
-	},
 	"frostable": true,
 	"collisionSelectionBox": {
 		"x1": 0.125,
@@ -82,7 +70,6 @@
 	"sideopaque": { "all": false },
 	"sidesolid": { "all": false },
 	"renderpass": "Transparent",
-	"vertexFlags": { "shiny": true },
 	"guiTransform": {
 		"translation": { "x": 0, "y": 14, "z": 0 },
 		"rotation": { "x": -22, "y": -50, "z": 0 },
